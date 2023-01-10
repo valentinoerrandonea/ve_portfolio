@@ -1,0 +1,168 @@
+/*COMUNES EN TODO EL DOC*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #ffff;
+    width: 80%;
+    margin: auto;
+    font-family: "Fira Code", monospace;
+}
+
+span{
+    color: #6100ff;
+}
+
+h1, h2, h3, .description{
+    width: 55%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+}
+
+li{
+    list-style: none;
+}
+
+button {
+    font-size: 24px;
+    width: fit-content;
+    height: 70px;
+    padding: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid #6100ff;
+    border-radius: 5px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #6100ff;
+}
+
+button:hover {
+    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
+    border: 0.188rem solid #6100ff;
+}
+
+.subtitle{
+    font-size: 2.188rem;
+    font-weight: bolder;
+}
+
+.description{
+    font-size: 1.25rem;
+    margin-bottom: 0.681rem;
+}
+
+/*---------------------------------------------------------------*/
+/*HEADER*/
+
+.home__header--container {
+    margin-bottom: 7rem;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 0;
+    left: auto;
+}
+
+.navbar {
+    text-align: right;
+}
+
+.nav-links {
+    display: inline-block;
+    text-align: right;
+    padding-top: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.nav-links:hover{
+    font-weight: bolder;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/*CSS PARA PRESENTACION*/
+
+.home__presentation--container{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 30% 15% auto;
+    grid-template-areas:
+            "title img"
+            "subtitle img"
+            "btn img";
+}
+
+.home__image{
+    grid-area: img;
+    width:37.5rem ;
+    height: 37.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
+    border: solid 0.188rem #6100ff;
+}
+
+.home__title{
+    grid-area: title;
+    font-size: 2.188rem;
+    font-weight: bold;
+    height: fit-content;
+}
+#home__description{
+    grid-area: subtitle;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#home__presentation-btn{
+    grid-area: btn;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*HOME-ABOUT*/
+.home__about--container{
+    display: grid;
+    grid-template-columns: 4fr 2fr ;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+            "title ."
+            "descrip ."
+            "btn .";
+}
+
+#home__about--title{
+    grid-area: title;
+}
+
+#home__about--descriptions{
+    grid-area: descrip;
+}
+
+#home__about--btn{
+    grid-area: btn;
+}
+/*--------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
