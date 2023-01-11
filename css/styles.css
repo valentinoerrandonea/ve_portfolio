@@ -135,12 +135,12 @@ button:hover {
 /*HOME-ABOUT*/
 .home__about--container{
     display: grid;
-    grid-template-columns: 4fr 2fr ;
+    grid-template-columns: 90% ;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas:
-            "title ."
-            "descrip ."
-            "btn .";
+            "title"
+            "descrip"
+            "btn";
 }
 
 #home__about--title{
@@ -155,8 +155,59 @@ button:hover {
     grid-area: btn;
 }
 /*--------------------------------------------------------------------------------*/
+/*GRID PARA SKILLS*/
+.home__skills--container{
+    display: grid;
+    grid-template-areas:
+            "title"
+            "description";
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto;
+}
+
+.home__skills--title{
+    grid-area: title;
+}
+
+.home__skills--description{
+    grid-area: description;
+}
 
 
+.home__skills--boxes{
+    display: grid;
+    justify-content: center;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    align-content: center;
+    grid-template-areas:
+            "languages frameworks"
+            "tools others";
+}
+
+.home__skills--subtitle{
+
+}
+
+.languages{
+    grid-area: languages;
+}
+
+.frameworks{
+    grid-area: frameworks;
+}
+
+.tools{
+    grid-area: tools;
+}
+
+.others{
+    grid-area: others;
+}
+
+.skill{
+    border: solid 1px #fff;
+}
 
 
 
