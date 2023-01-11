@@ -99,7 +99,7 @@ button:hover {
 .home__presentation--container{
     display: grid;
     grid-template-columns: 4fr 2fr;
-    grid-template-rows: 30% 15% auto;
+    grid-template-rows: 40% 25% auto;
     grid-template-areas:
             "title img"
             "subtitle img"
