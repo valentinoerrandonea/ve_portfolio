@@ -146,7 +146,7 @@ button:hover {
 
 #home__about--title{
     grid-area: title;
-    margin-top: 10rem;
+    margin-top: 12rem;
     margin-bottom: 2rem;
 }
 
@@ -174,10 +174,15 @@ button:hover {
 .home__skills--container{
     display: grid;
     grid-template-areas:
-            "title"
-            "description";
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(2, auto);
+            "title title"
+            "description img"
+            ". img"
+            "languages img"
+            "frameworks img"
+            "tools img"
+            "others img";
+    grid-template-columns: 70% auto;
+    grid-template-rows: repeat(7, auto);
 }
 
 .home__skills--title{
@@ -190,19 +195,9 @@ button:hover {
     grid-area: description;
 }
 
-
-.home__skills--boxes {
-    display: grid;
-    grid-template-areas:
-            "languages"
-            "frameworks"
-            "tools"
-            "others";
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(4, auto);
-    gap: 3rem;
+.skills_img{
+    grid-area: img;
 }
-
 
 .languages{
     grid-area: languages
@@ -234,6 +229,8 @@ button:hover {
     border: solid 0.188rem #e08573;
     width: fit-content;
 }
+
+
 /*---------------------------------*/
 /*PROJECTS*/
 .home__projects--container{
@@ -253,7 +250,7 @@ button:hover {
 
 .projects__subtitle{
     grid-area: subtitle;
-    margin-top: 10rem;
+    margin-top: 14rem;
     margin-bottom: 2rem;
 }
 
