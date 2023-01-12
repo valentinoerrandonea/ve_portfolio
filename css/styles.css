@@ -6,15 +6,15 @@
 }
 
 body{
-    background-color: #000;
-    color: #ffff;
+    background-color: #f0efeb;
+    color: #022b3a;
     width: 80%;
     margin: auto;
     font-family: "Fira Code", monospace;
 }
 
 span{
-    color: #6100ff;
+    color: #1f7a8c;
 }
 
 h1, h2, h3, .description{
@@ -23,7 +23,7 @@ h1, h2, h3, .description{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #022b3a;
     font-family: "Fira Code", monospace;
 }
 
@@ -38,16 +38,16 @@ button {
     padding: 10px;
     background-color: transparent;
     text-decoration: none;
-    border: 2px solid #6100ff;
+    border: 2px solid #1f7a8c;
     border-radius: 5px;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
-    color: #6100ff;
+    color: #1f7a8c;
 }
 
 button:hover {
-    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
-    border: 0.188rem solid #6100ff;
+    box-shadow: 0 0 0.625rem 0 #1f7a8c inset, 0 0 1.25rem 0.125rem #1f7a8c;
+    border: 0.188rem solid #1f7a8c;
 }
 
 .subtitle{
@@ -112,8 +112,8 @@ button:hover {
     width:37.5rem ;
     height: 37.5rem;
     border-radius: 50%;
-    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
-    border: solid 0.188rem #6100ff;
+    box-shadow: 0 0 0.625rem 0 #1f7a8c inset, 0 0 1.25rem 0.125rem #1f7a8c;
+    border: solid 0.188rem #1f7a8c;
 }
 
 .home__title{
@@ -230,10 +230,13 @@ button:hover {
 }
 
 .skill:hover{
-    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
-    border: solid 0.188rem #6100ff;
+    box-shadow: 0 0 0.625rem 0 #1f7a8c inset, 0 0 1.25rem 0.125rem #1f7a8c;
+    border: solid 0.188rem #1f7a8c;
     width: fit-content;
 }
+
+/*-------------------------------------------*/
+/*PROJECTS*/
 
 
 
