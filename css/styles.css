@@ -177,12 +177,13 @@ button:hover {
             "title"
             "description";
     grid-template-columns: 90%;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, auto);
 }
 
 .home__skills--title{
     grid-area: title;
     margin-top: 10rem;
+    margin-bottom: 2rem;
 }
 
 .home__skills--description{
@@ -190,36 +191,25 @@ button:hover {
 }
 
 
-.home__skills--boxes{
+.home__skills--boxes {
     display: grid;
-    justify-content: center;
-    column-gap: 10rem;
-    row-gap: 5rem;
-    align-content: center;
     grid-template-areas:
-            "languages frameworks"
-            "tools others";
+            "languages"
+            "frameworks"
+            "tools"
+            "others";
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(4, auto);
+    gap: 3rem;
 }
 
-.home__skills--subtitle{
-    font-size: 1.5rem;
-    justify-content: center;
-}
-
-.skill_points{
-    font-size: 1.2rem;
-}
-.skill_points-more{
-    font-size: 1.2rem;
-    color: #6100ff;
-}
 
 .languages{
-    grid-area: languages;
+    grid-area: languages
 }
 
 .frameworks{
-    grid-area: frameworks;
+    grid-area: frameworks
 }
 
 .tools{
@@ -227,17 +217,23 @@ button:hover {
 }
 
 .others{
-    grid-area: others;
-}
-
-.skill{
-    border: solid 1px #fff;
+    grid-area: others
 }
 
 
+.home__skills--subtitle{
+    padding: 1rem;
+}
 
+.skillset{
+    padding: 1rem;
+}
 
-
+.skill:hover{
+    box-shadow: 0 0 0.625rem 0 #6100ff inset, 0 0 1.25rem 0.125rem #6100ff;
+    border: solid 0.188rem #6100ff;
+    width: fit-content;
+}
 
 
 
