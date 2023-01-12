@@ -65,6 +65,7 @@ button:hover {
 
 .home__header--container {
     margin-bottom: 7rem;
+
 }
 
 .logo {
@@ -136,7 +137,7 @@ button:hover {
 .home__about--container{
     display: grid;
     grid-template-columns: 90% ;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1fr 2fr 20%;
     grid-template-areas:
             "title"
             "descrip"
@@ -145,6 +146,8 @@ button:hover {
 
 #home__about--title{
     grid-area: title;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
 }
 
 #home__about--descriptions{
@@ -154,6 +157,18 @@ button:hover {
 #home__about--btn{
     grid-area: btn;
 }
+
+#btn_contact_me{
+    width: 15rem;
+    height: 5rem;
+    margin-right: 1.5rem;
+}
+
+#btn_resume{
+    width: 15rem;
+    height: 5rem;
+}
+
 /*--------------------------------------------------------------------------------*/
 /*GRID PARA SKILLS*/
 .home__skills--container{
@@ -167,6 +182,7 @@ button:hover {
 
 .home__skills--title{
     grid-area: title;
+    margin-top: 10rem;
 }
 
 .home__skills--description{
@@ -186,7 +202,16 @@ button:hover {
 }
 
 .home__skills--subtitle{
+    font-size: 1.5rem;
+    justify-content: center;
+}
 
+.skill_points{
+    font-size: 1.2rem;
+}
+.skill_points-more{
+    font-size: 1.2rem;
+    color: #6100ff;
 }
 
 .languages{
