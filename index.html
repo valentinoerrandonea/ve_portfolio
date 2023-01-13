@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- LINK ANIMATE CSS   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
+    <!--    LINK FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/7245dffc54.js" crossorigin="anonymous"></script></head>
 
 <body>
     <div class="home__header--container">
@@ -166,22 +167,22 @@
         </section>
 
         <section>
-            <h2 class="subtitle"><span>#</span> Contact</h2>
-            <div>
-                <p class="description">
+            <div class="home__contact--container">
+                <h2 class="subtitle home__contact--subtitle"><span>#</span> Contact</h2>
+                <p class="description home__contact--description">
                     I'm Intrerested in <strong>full-time</strong> opportunities. However, if you have other request or question, don't hesitate to contact me.
                 </p>
 
-                <div>
-                    <h3>Message me here:</h3>
+                <div class="home__contact--box">
+                    <h3 class="contact__box--title">Message me:</h3>
                     <p>
                         <a href="https://linkedin.com/in/valentinoerrandonea/" target="_blank"><img
-                                src="./assets/images/icons/linkedin.svg" alt="LinkedIn"/>
+                                src="./assets/images/icons/linkedin.svg" alt="LinkedIn" class="contact__box--linkedin contact__box--img"/>
                             /valentinoerrandonea</a>
                     </p>
                     <p>
                         <a href="mailto:hello@valdev.me" target="_blank"><img src="./assets/images/icons/email.svg"
-                                alt="eMail"  />
+                                alt="eMail" class="contact__box--email contact__box--img">
                             hello@valdev.me</a>
                     </p>
                 </div>
@@ -191,31 +192,33 @@
 
 
 
-    <footer>
-        <hr>
-        <div>
-            <div>
-                <img src="./assets/images/logos/heregoeslogo.jpg" alt="Footer logo" />
-                <div>
-                    <h3>Valentino Errandonea</h3>
-                    <p>Full Stack Developer & Product Manager</p>
-                </div>
-                <div>
-                    <p>Media</p>
-                    <div>
-                        <a href="https://discord.gg/user/0xHamm#9191" target="_blank"><img src="./assets/images/icons/discord.svg" alt="Discord" /></a>
-                        <a href="mailto:hello@valdevv.me" target="_blank"><img src="./assets/images/icons/email.svg" alt="Email"/></a>
-                        <a href="https://github.com" target="_blank"><img src="./assets/images/icons/github.svg" alt="GitHub" /></a>
-                        <a href="https://linkedin.com/valentinoerrandonea" target="_blank"><img src="./assets/images/icons/linkedin.svg" alt="LinkedIn"  /></a>
-                        <a href="https://twitter.com/val__devv" target="_blank"><img src="./assets/images/icons/twitter.svg" alt="Twitter"   /></a>
-                    </div>
-                </div>
-            </div>
+    <footer class="footer-distributed">
 
-            <div>
-                © Valentino Errandonea All Rights Reserved
-            </div>
+        <div class="footer-right">
+
+            <a href="mailto:valentinoerrandonea2002@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/valentinoerrandonea"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/valentinoerrandonea"><i class="fa fa-github"></i></a>
+
         </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="./index.html">Home</a>
+
+                <a href="./pages/about_me.html">About</a>
+
+                <a href="./pages/experience.html">Experience</a>
+
+                <a href="./pages/projects.html">Projects</a>
+
+                <a href="./pages/contact.html">Contact</a>
+            </p>
+
+            <p>Valentino Errandonea, All rights Reserved 2023</p>
+        </div>
+
     </footer>
     <script src="js/wow.min.js"></script>
     <script>

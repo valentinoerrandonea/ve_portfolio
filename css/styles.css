@@ -94,7 +94,76 @@ button:hover {
 }
 
 /*---------------------------------------------------------------------------*/
+/*FOOTER*/
+.footer-distributed {
+    background-color: #0f1014;
+    width: 100%;
+    text-align: left;
+    padding: 45px 50px;
+    border-top: 1px solid #fdd4c5;
+}
 
+.footer-distributed .footer-left p {
+    color: #fdd4c5;
+    font-size: 14px;
+    margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fdd4c5;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/*-----------------------------*/
 /*CSS PARA PRESENTACION*/
 
 .home__presentation--container{
@@ -288,3 +357,60 @@ button:hover {
     font-weight: normal ;
     margin-bottom:1.25rem
 }
+/*----------------------------------*/
+/*CONTACT US*/
+.home__contact--container{
+    display: grid;
+    grid-template-areas:
+            "title box"
+            "subtitle box"
+            ". box";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.home__contact-subtitle{
+    grid-area: title;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+}
+
+.home__contact--description{
+    grid-area: subtitle;
+}
+
+ .home__contact--box{
+     grid-area: box;
+     display: grid;
+     grid-template-areas:
+             "message"
+             "logo"
+             "logo2";
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto;
+     gap: 0.7rem;
+     box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+     border: solid 0.188rem #e08573;
+     padding: 1.5rem;
+     margin-bottom: 2rem;
+ }
+
+ .contact__box--title{
+     grid-area: message;
+ }
+
+ .contact__box--linkedin{
+     grid-area: logo;
+ }
+
+ .contact__box--email{
+     grid-area: logo2;
+ }
+
+ .contact__box--img{
+     width: 2rem;
+     height: 2rem;
+     translate: 0 0.5rem;
+ }
