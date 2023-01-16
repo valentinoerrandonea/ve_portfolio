@@ -338,6 +338,7 @@ button:hover {
 .projects__box{
     border: 2px solid #e08573;
     padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 .projects__btn{
     display: block;
@@ -414,3 +415,217 @@ button:hover {
      height: 2rem;
      translate: 0 0.5rem;
  }
+/*----------------------------*/
+/*ABOUT PAGE*/
+.about__container{
+    display: grid;
+    grid-template-areas:
+            "aboutTitle aboutImg"
+            "aboutSubtitle aboutImg"
+            "aboutDescrip aboutImg"
+            "aboutSkills aboutSkills";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 7rem 7rem auto auto ;
+}
+.about__title{
+    grid-area: aboutTitle;
+    font-size: 2.2rem;
+}
+
+.about__photo{
+    grid-area: aboutImg;
+    width: 35.5rem ;
+    height: 35.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+    border: solid 0.188rem #e08573;
+}
+
+
+.about__subtitle{
+    grid-area: aboutSubtitle;
+    font-size: 1.8rem;
+}
+
+.about__description{
+    grid-area: aboutDescrip;
+}
+
+.about__skills--container{
+    grid-area: aboutSkills;
+    display: grid;
+    grid-template-areas:
+            "skillsTitle"
+            "skillsDescrip"
+            "skillsTech"
+            "skillsPersonal";
+    grid-template-columns: 70%;
+}
+
+.about__skills--subtitle{
+    grid-area: skillsTitle;
+}
+
+.about__skills--descriptions{
+    grid-area: skillsDescrip;
+}
+
+.skills__technical--container{
+    grid-area: skillsTech;
+    display: grid;
+    grid-template-areas:
+            "techTitle"
+            "techDescrip"
+            "techLang"
+            "techFrameworks"
+            "techTools"
+            "techOthers";
+    gap: 1rem;
+}
+
+.skills__technical--title{
+    grid-area: techTitle;
+    font-size: 28px;
+    margin-top: 6rem;
+}
+
+.skills__technical--descrip{
+    grid-area: techDescrip;
+}
+
+.about__skills--languages{
+    grid-area: techLang;
+}
+
+.skills__subtitle{
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__skillset{
+    font-size: 20px;
+}
+
+.about__skills--frameworks{
+    grid-area: techFrameworks;
+}
+
+.about__skills--tools{
+    grid-area: techTools;
+}
+
+.about__skills--others{
+    grid-area: techOthers;
+}
+
+
+
+.skills__interpersonal--container{
+    grid-area: skillsPersonal;
+    display: grid;
+    grid-template-areas:
+            "personalTitle"
+            "personalDescrip"
+}
+
+.skills__interpersonal--subtitle{
+    grid-area: personalTitle;
+    margin-top: 3rem;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__interpersonal--description{
+    grid-area: personalDescrip;
+    margin-bottom: 3rem;
+}
+
+/*-----------------*/
+
+/*PROJECTS*/
+
+.projects__titles{
+    display: grid;
+    grid-template-areas:
+            "projectsTitle"
+            "projectsSubtitle"
+            "projectsDescrip";
+    gap: 2rem;
+}
+
+.projects__title{
+    grid-area: projectsTitle;
+    font-size: 36px;
+}
+
+.titleDescrip{
+    grid-area: projectsSubtitle;
+    font-size: 28px;
+}
+
+.projects__descrip{
+    grid-area: projectsDescrip;
+}
+
+.projects__subtitles{
+    font-size: 32px;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.projects__text{
+    margin-bottom: 4rem;
+}
+/*-------------------------------------------------------------------*/
+/*EXPERIENCE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
