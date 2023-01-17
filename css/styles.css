@@ -338,6 +338,7 @@ button:hover {
 .projects__box{
     border: 2px solid #e08573;
     padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 .projects__btn{
     display: block;
@@ -414,3 +415,392 @@ button:hover {
      height: 2rem;
      translate: 0 0.5rem;
  }
+/*----------------------------*/
+/*ABOUT PAGE*/
+.about__container{
+    display: grid;
+    grid-template-areas:
+            "aboutTitle aboutImg"
+            "aboutSubtitle aboutImg"
+            "aboutDescrip aboutImg"
+            "aboutSkills aboutSkills";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 7rem 7rem auto auto ;
+}
+.about__title{
+    grid-area: aboutTitle;
+    font-size: 2.2rem;
+}
+
+.about__photo{
+    grid-area: aboutImg;
+    width: 35.5rem ;
+    height: 35.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+    border: solid 0.188rem #e08573;
+}
+
+
+.about__subtitle{
+    grid-area: aboutSubtitle;
+    font-size: 1.8rem;
+}
+
+.about__description{
+    grid-area: aboutDescrip;
+}
+
+.about__skills--container{
+    grid-area: aboutSkills;
+    display: grid;
+    grid-template-areas:
+            "skillsTitle"
+            "skillsDescrip"
+            "skillsTech"
+            "skillsPersonal";
+    grid-template-columns: 70%;
+}
+
+.about__skills--subtitle{
+    grid-area: skillsTitle;
+}
+
+.about__skills--descriptions{
+    grid-area: skillsDescrip;
+}
+
+.skills__technical--container{
+    grid-area: skillsTech;
+    display: grid;
+    grid-template-areas:
+            "techTitle"
+            "techDescrip"
+            "techLang"
+            "techFrameworks"
+            "techTools"
+            "techOthers";
+    gap: 1rem;
+}
+
+.skills__technical--title{
+    grid-area: techTitle;
+    font-size: 28px;
+    margin-top: 6rem;
+}
+
+.skills__technical--descrip{
+    grid-area: techDescrip;
+}
+
+.about__skills--languages{
+    grid-area: techLang;
+}
+
+.skills__subtitle{
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__skillset{
+    font-size: 20px;
+}
+
+.about__skills--frameworks{
+    grid-area: techFrameworks;
+}
+
+.about__skills--tools{
+    grid-area: techTools;
+}
+
+.about__skills--others{
+    grid-area: techOthers;
+}
+
+
+
+.skills__interpersonal--container{
+    grid-area: skillsPersonal;
+    display: grid;
+    grid-template-areas:
+            "personalTitle"
+            "personalDescrip"
+}
+
+.skills__interpersonal--subtitle{
+    grid-area: personalTitle;
+    margin-top: 3rem;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__interpersonal--description{
+    grid-area: personalDescrip;
+    margin-bottom: 3rem;
+}
+
+/*-----------------*/
+
+/*PROJECTS*/
+
+.projects__titles{
+    display: grid;
+    grid-template-areas:
+            "projectsTitle"
+            "projectsSubtitle"
+            "projectsDescrip";
+    gap: 2rem;
+}
+
+.projects__title{
+    grid-area: projectsTitle;
+    font-size: 36px;
+}
+
+.titleDescrip{
+    grid-area: projectsSubtitle;
+    font-size: 28px;
+}
+
+.projects__descrip{
+    grid-area: projectsDescrip;
+}
+
+.projects__subtitles{
+    font-size: 32px;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.projects__text{
+    margin-bottom: 4rem;
+}
+/*-------------------------------------------------------------------*/
+/*EXPERIENCE*/
+.experience__container{
+    display: grid;
+    grid-template-areas:
+            "expTitle ."
+            "expSubtitle expImg"
+            "expDescrip expImg"
+            "experiences expImg";
+    gap: 2rem;
+}
+
+.exp__title{
+    grid-area: expTitle;
+}
+
+.exp__subtitle{
+    grid-area: expSubtitle;
+}
+
+.exp__descrip{
+    grid-area: expDescrip;
+}
+
+.exp__box{
+    grid-area: experiences;
+    display: grid;
+    grid-template-areas:
+            "junior"
+            "hiddenS"
+            "redlab";
+    gap: 4rem;
+}
+
+.junior{
+    grid-area: junior;
+}
+
+.hidden{
+    grid-area: hiddenS;
+}
+
+.redlab{
+    grid-area: redlab;
+}
+.exp__box--subtitle{
+    margin: 1rem;
+}
+.exp__box--description{
+    margin: 1rem;
+}
+
+.experience__img{
+    grid-area: expImg;
+    width: 35.5rem;
+    height: 35.5rem;
+}
+/*---------------------------------*/
+/*CONTACT*/
+/* FORM */
+
+.contact__container{
+    display: grid;
+    grid-template-areas:
+            "contactTitle contactImg"
+            "contactDescrip contactImg"
+            "contactSubtitle contactImg"
+            "contactBox contactImg"
+            "contactSubtitle2 contactImg"
+            "contactDescrip2 contactImg"
+            "form contactImg";
+    gap: 2rem;
+}
+
+.contact__title{
+    grid-area: contactTitle;
+}
+
+.contact__descrip{
+    grid-area: contactDescrip;
+    margin-bottom: 4rem;
+}
+
+.contact__descrip2{
+    grid-area: contactDescrip2;
+}
+
+.contact__subtitle{
+    grid-area: contactSubtitle;
+    margin-bottom: 2rem;
+}
+
+.contact__subtitle2{
+    grid-area: contactSubtitle2;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact__icons--box{
+    grid-area: contactBox;
+    display: flex;
+}
+
+
+.form__container {
+    border-radius: 5px;
+    width: 40%;
+    grid-area: contactForm;
+    margin-top: 2rem;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e08573;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #0f1014 ;
+    font-family: "Fira Code", monospace;
+}
+
+input[type="submit"] {
+    background-color: #0f1014;
+    font-family: "Fira Code", monospace;
+    color: #fdd4c5;
+    padding: 12px 20px;
+    border: solid 1px #e08573;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #e08573;
+    color: #fdd4c5;
+    font-family: "Fira Code", monospace;
+}
+
+.contact__icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    translate: 5px -5px;
+}
+
+.contact__img{
+    width: 50rem;
+    height: 50rem;
+    grid-area: contactImg;
+}
+
+/*COMING SOON*/
+.comingsoon__container{
+    display: grid;
+    grid-template-areas:
+            "comingTitle"
+            "comingDescrip"
+            "comingBtn"
+            "comingImg";
+    gap: 2rem
+}
+
+.comingsoon__title{
+    grid-area: comingTitle;
+}
+
+.comingsoon__descrip{
+    grid-area: comingDescrip;
+}
+
+.comingsoon__btn{
+    grid-area: comingBtn;
+}
+
+.comingsoon__img{
+    grid-area: comingImg;
+    width: 50rem;
+    height: 50rem;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
