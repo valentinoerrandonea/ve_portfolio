@@ -63,36 +63,32 @@ button:hover {
 /*---------------------------------------------------------------*/
 /*HEADER*/
 
-.home__header--container {
-    margin-bottom: 7rem;
-
+header{
+    color: #fdd4c5;
+    border-bottom: 1px solid #e08573;
+    margin-bottom: 5rem;
 }
 
-.logo {
-    height: 3rem;
-    width: 3rem;
-    position: fixed;
-    top: 0;
-    left: auto;
+.navbar-nav li a{
+    color: #fdd4c5;
 }
 
-.navbar {
-    text-align: right;
+.navbar-nav li a:hover{
+    color: #e08573;
+    font-weight: bold;
 }
 
-.nav-links {
+.navbar-toggler-icon {
     display: inline-block;
-    text-align: right;
-    padding-top: 1rem;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: normal;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #e08573 ;
 }
-
-.nav-links:hover{
-    font-weight: bolder;
-}
-
 /*---------------------------------------------------------------------------*/
 /*FOOTER*/
 .footer-distributed {
@@ -302,62 +298,40 @@ button:hover {
 
 /*---------------------------------*/
 /*PROJECTS*/
-.home__projects--container{
-    display: grid;
-    grid-template-areas:
-            "subtitle"
-            "description"
-            "projects";
+
+.card-img-top{
+    width: content-box;
+    height: content-box;
+}
+
+.card{
+    width: fit-content;
+    border: 1px solid #e08573;
+}
+
+.card-body{
+    background-color: #0f1014 ;
+}
+
+.btn, .btn-primary{
+    background-color: #0f1014;
+    border: 1px solid #e08573 ;
+    justify-content: center;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+    border: 0.188rem solid #e08573;
+    background-color: #0f1014;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+    border: 0.188rem solid #e08573;
+    background-color: #0f1014;
 }
 
 
-.projects__img{
-    width: 25.5rem;
-    height: 25.5rem;
-    border: 2px solid #e08573;
-}
-
-.projects__subtitle{
-    grid-area: subtitle;
-    margin-top: 14rem;
-    margin-bottom: 2rem;
-}
-
-.projects__subtitle--description{
-    grid-area: description;
-    margin-bottom: 5rem;
-}
-
-.projects__container{
-    grid-area: projects;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-}
-
-.projects__box{
-    border: 2px solid #e08573;
-    padding-bottom: 1.25rem;
-    margin-bottom: 2rem;
-}
-.projects__btn{
-    display: block;
-    font-size: 1rem;
-    text-align: center;
-    margin: 0 auto
-}
-
-.projects__box--subtitles{
-    font-weight: bold ;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-
-.projects__box--descriptions{
-    font-weight: normal ;
-    margin-bottom:1.25rem
-}
 /*----------------------------------*/
 /*CONTACT US*/
 .home__contact--container{
@@ -765,51 +739,6 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 320px) {
     /*COMUNES EN TODO EL DOC*/
-
-    body{
-        width: 100%;
-        margin: auto;
-    }
-
-    h1, h2, h3, .description, p{
-        width: 100%;
-    }
-
-    .home__presentation--container{
-        display: grid;
-        grid-template-columns: 4fr 2fr;
-        grid-template-rows: 40% 25% auto;
-        grid-template-areas:
-            "title"
-            "subtitle"
-            "btn"
-            "img";
-    }
-
-    .home__image{
-        grid-area: img;
-        width:25.5rem ;
-        height: 25.5rem;
-        border-radius: 50%;
-        box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-        border: solid 0.188rem #e08573;
-        margin-top: 2rem;
-    }
-
-    .home__title{
-        grid-area: title;
-        font-size: 2.188rem;
-        font-weight: bold;
-        height: fit-content;
-    }
-    .home__description{
-        grid-area: subtitle;
-        font-size: 1.25rem;
-        font-weight: bold;
-    }
-    .home__presentation-btn{
-        grid-area: btn;
-    }
 
 }
 

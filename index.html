@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio | Valentino Errandonea</title>
     <link rel="icon" href="./assets/images/logos/heregoeslogo.jpg">
-    <!--LINK CSS-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--    CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!--    LINK GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +17,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--    LINK FONT AWESOME-->
     <script src="https://kit.fontawesome.com/7245dffc54.js" crossorigin="anonymous"></script></head>
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
 
 <body>
-    <div class="home__header--container">
+    <div>
         <header>
-            <a href="index.html" class="logo"><img src="./assets/images/logos/heregoeslogo.jpg" alt="Favicon" class="logo"></a>
-            <nav class="navbar">
-                <ul>
-                    <li class="nav-links">
-                        <a href="./index.html"><span>#</span> Home</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="./pages/about_me.html"><span>#</span> About Me</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="./pages/projects.html"><span>#</span> Projects</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="./pages/experience.html"><span>#</span> Experience</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="./pages/contact.html"><span>#</span> Contact</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/about_me.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/experience.html">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
     </div>
@@ -47,12 +55,10 @@
     <main>
         <div class="home__presentation--container">
             <img src="./assets/images/me/hamm1.png" alt="Valentino Errandonea" class="home__image">
-            <h1 class="home__title">
-                Hey! I'm Valentino, a <span>Product Manager</span> and <span>Full-Stack Developer</span>
-            </h1>
+            <h1 class="home__title">Hey! I'm Valentino, a <span>Product Manager</span> and <span>Full-Stack Developer</span></h1>
 
             <h2 class="home__description">
-                <strong>Product Manager</strong> & <strong>Full-Stack Developer</strong>: Agile, user research, web dev. Track record of delivering <strong>successful products</strong> & <strong>Leading teams</strong>.
+                Product Manager & Full-Stack Developer: Agile, user research, web dev. Track record of delivering successful products & Leading teams.
             </h2>
             <div class="home__presentation-btn">
                 <button type="button" class="btn_contact_me">
@@ -126,43 +132,75 @@
                 <p class="description projects__subtitle--description">
                     I'm excited to share some of my programming projects with you. From simple scripts to full-fledged applications, I enjoy the process of designing, coding, and testing solutions. Here are a few projects I've recently worked on.
                 </p>
-
-                <div class="projects__container">
-                    <div class="projects__box">
-                        <img src="./assets/images/project-icons/doom.jpg" alt="Doom" class="projects__img">
-                        <h3 class="projects__box--subtitles"><span>//</span>Doom Remake</h3>
-                        <p class="projects__box--descriptions">
-                            <span> -</span>Play the classic game "Doom" coded by me!
-                        </p>
-                        <div>
-                            <button class="projects__btn">
-                                <a href="./pages/coming_soon.html">Coming Soon...</a>
-                            </button>
+            </div>
+                <div class="d-flex justify-content-evenly flex-wrap">
+                    <div class="card">
+                        <img src="./assets/images/project-icons/doom.jpg" class="card-img-top" alt="Doom">
+                        <div class="card-body">
+                            <h5 class="card-title"><span>//</span>Doom Remake</h5>
+                            <p class="card-text"><span> -</span>Play the classic game "Doom" coded by me</p>
+                            <a href="./pages/coming_soon.html" class="btn btn-primary">Coming Soon...</a>
                         </div>
                     </div>
 
-                    <div class="projects__box">
-                        <img src="./assets/images/project-icons/calculator.jpg" alt="Calculator" class="projects__img">
-                        <h3 class="projects__box--subtitles"><span>//</span>Calculator App</h3>
-                        <p class="projects__box--descriptions">
-                            <span> -</span>Tool coded by me for basic arithmetic
-                        </p>
-                        <button class="projects__btn">
-                            <a href="./pages/coming_soon.html" class="comingsoon">Coming Soon...</a>
-                        </button>
+                    <div class="card">
+                        <img src="./assets/images/project-icons/calculator.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><span>//</span>Calculator</h5>
+                            <p class="card-text"><span> -</span>Tool coded by me for basic arithmetic</p>
+                            <a href="./pages/coming_soon.html" class="btn btn-primary">Coming Soon...</a>
+                        </div>
                     </div>
 
-                    <div class="projects__box">
-                        <img src="./assets/images/project-icons/LOGO COLOR JPG-01.jpg" alt="Santa Ana" class="projects__img">
-                        <h3 class="projects__box--subtitles"><span>//</span>Santa Ana Website</h3>
-                        <p class="projects__box--descriptions">
-                            <span> -</span>Basic Website for a family business.
-                        </p>
-                        <button class="projects__btn">
-                            <a href="./pages/coming_soon.html">Coming Soon...</a>
-                        </button>
+                    <div class="card">
+                        <img src="./assets/images/project-icons/LOGO COLOR JPG-01.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><span>//</span>Santa Ana</h5>
+                            <p class="card-text"><span> -</span>Basic Website for a family business</p>
+                            <a href="./pages/coming_soon.html" class="btn btn-primary">Coming Soon...</a>
+                        </div>
                     </div>
-                </div>
+
+
+
+
+
+<!--                <div class="projects__container">-->
+<!--                    <div class="projects__box">-->
+<!--                        <img src="./assets/images/project-icons/doom.jpg" alt="Doom" class="projects__img">-->
+<!--                        <h3 class="projects__box&#45;&#45;subtitles"><span>//</span>Doom Remake</h3>-->
+<!--                        <p class="projects__box&#45;&#45;descriptions">-->
+<!--                            <span> -</span>Play the classic game "Doom" coded by me!-->
+<!--                        </p>-->
+<!--                        <div>-->
+<!--                            <button class="projects__btn">-->
+<!--                                <a href="./pages/coming_soon.html">Coming Soon...</a>-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="projects__box">-->
+<!--                        <img src="./assets/images/project-icons/calculator.jpg" alt="Calculator" class="projects__img">-->
+<!--                        <h3 class="projects__box&#45;&#45;subtitles"><span>//</span>Calculator App</h3>-->
+<!--                        <p class="projects__box&#45;&#45;descriptions">-->
+<!--                            <span> -</span>Tool coded by me for basic arithmetic-->
+<!--                        </p>-->
+<!--                        <button class="projects__btn">-->
+<!--                            <a href="./pages/coming_soon.html" class="comingsoon">Coming Soon...</a>-->
+<!--                        </button>-->
+<!--                    </div>-->
+
+<!--                    <div class="projects__box">-->
+<!--                        <img src="./assets/images/project-icons/LOGO COLOR JPG-01.jpg" alt="Santa Ana" class="projects__img">-->
+<!--                        <h3 class="projects__box&#45;&#45;subtitles"><span>//</span>Santa Ana Website</h3>-->
+<!--                        <p class="projects__box&#45;&#45;descriptions">-->
+<!--                            <span> -</span>Basic Website for a family business.-->
+<!--                        </p>-->
+<!--                        <button class="projects__btn">-->
+<!--                            <a href="./pages/coming_soon.html">Coming Soon...</a>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </section>
 
@@ -224,6 +262,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 
 </html>
