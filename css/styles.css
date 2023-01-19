@@ -9,7 +9,7 @@ body{
     background-color: #0f1014;
     color: #fdd4c5;
     width: 100%;
-    margin: auto;
+    /*margin: auto;*/
     font-family: "Fira Code", monospace;
 }
 
@@ -17,9 +17,7 @@ span{
     color: #e08573;
 }
 
-/*h1, h2, h3, .description{*/
-/*width: 55%;*/
-/*}*/
+
 
 a{
     text-decoration: none;
@@ -174,19 +172,18 @@ header{
 
 .home__image{
     /*grid-area: img;*/
-    width:600px;
-    height: 600px;
+    width:500px;
+    height: 500px;
     border-radius: 50%;
     box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
     border: solid 0.188rem #e08573;
     margin-left: 2rem;
+    translate: 100px 0;
 }
 
 .home__title{
-    /*grid-area: title;*/
     font-size: 2.188rem;
     font-weight: bold;
-    height: fit-content;
     margin-bottom: 4rem;
 }
 .home__description{
@@ -194,12 +191,13 @@ header{
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 4rem;
+    translate: 0 -350px;
 
 }
 .home__presentation-btn{
     /*grid-area: btn;*/
-    translate: 0 -400px;
-    margin-left: 0.5rem;
+    translate: 0 -300px;
+    /*margin-left: 0.5rem;*/
 }
 
 /*--------------------------------------------------------------------------*/
@@ -268,6 +266,7 @@ header{
     /*grid-area: img;*/
     width:300px;
     height: 300px;
+    translate: 1000px -500px;
 }
 
 .languages{
@@ -306,8 +305,8 @@ header{
 /*PROJECTS*/
 
 .card-img-top{
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     object-fit: cover;
 }
 
@@ -750,120 +749,37 @@ input[type="submit"]:hover {
 }
 /*-----------------------------------------------------*/
 /*INICIO MEDIA QUERIES*/
-
-@media screen and (max-width: 576px) {
-    /*COMUNES EN TODO EL DOC*/
-
-    body{
-      margin: auto;
-    }
-
+@media screen and (max-width: 1400px) {
     .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        margin-left: 5rem;
+        translate: none;
     }
 
     .skills_img{
-        visibility: hidden;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin-left: 7rem;
+        translate: 1000px -450px;
     }
 
-    .home__contact--box{
-        visibility: hidden;
-    }
-
-    .home__presentation-btn{
-        justify-content: center;
-    }
-
-    .subtitle{
-        margin-top: 10rem;
-    }
-}
-/*----------------------------------------*/
-@media screen and (max-width: 768px) {
-    /*COMUNES EN TODO EL DOC*/
-
-    body{
-        margin: auto;
-    }
-
-    .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-
-    }
-
-    .skills_img{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
+    .home__description{
+        translate: 0 -300px;
     }
 
     .home__presentation-btn{
-        justify-content: center;
+        translate: 0 -300px;
     }
-
-    .subtitle{
-        margin-top: 10rem;
-    }
-}
-/*---------------------------------------*/
-@media screen and (max-width: 992px) {
-    /*COMUNES EN TODO EL DOC*/
-
-    body{
-        margin: auto;
-    }
-
-    .home__image{
-        width: 300px;
-        height: 300px;
-        translate: 70px -150px;
-    }
-
-    .home__presentation-btn{
-        translate: 0 -125px;
-        margin-left: auto;
-    }
-
-    .skills_img{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
-    }
-
-
-    .subtitle{
-        margin-top: 10rem;
-    }
-
-    .home__readme--btn{
-        justify-content: center;
-    }
-
 }
 
 @media screen and (max-width: 1200px) {
-    /*COMUNES EN TODO EL DOC*/
 
-    body{
-        margin: auto;
-    }
+
 
     .home__image{
         width: 500px;
         height: 500px;
-        translate: 55px -150px;
+        translate: none;
     }
 
     .home__presentation-btn{
@@ -883,30 +799,163 @@ input[type="submit"]:hover {
         visibility: hidden;
     }
 
+    .home__description{
+        translate: 0 -300px;
+    }
 
     .subtitle{
         margin-top: 5rem;
+        translate: none;
     }
 
     .home__skills--title{
         margin-top: 10rem;
+        translate: none;
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1198px){
     .home__image{
-        translate: 30px -175px;
+        width: 300px;
+        height: 300px;
+        translate: 700px 75px;
+    }
+    .home__description{
+        translate: 0 -300px;
+    }
+    .home__presentation-btn{
+        translate: 0 -250px;
+        margin-left: auto;
     }
 
     .skills_img{
-        position: relative;
-        width: 250px;
-        height: 250px;
-        margin-left: 7rem;
-        translate: 1000px -450px;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+    .home__readme--btn{
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 998px) {
+    .home__image{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+    }
+    .home__description{
+        translate: 0 -50px;
+    }
+    .home__presentation-btn{
+        translate: 0 -50px;
+        margin-left: auto;
+    }
+
+    .skills_img{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+    .home__readme--btn{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*COMUNES EN TODO EL DOC*/
+
+
+
+    .home__image{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+
+    }
+
+    .skills_img{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+    .home__presentation-btn{
+        justify-content: center;
+        translate: none;
+    }
+    .home__description{
+        translate: none;
+    }
+    .subtitle{
+        margin-top: 10rem;
     }
 }
 
+
+@media screen and (max-width: 576px) {
+    .home__image{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        translate: none;
+    }
+    .skills_img{
+        visibility: hidden;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+    .home__presentation-btn{
+        justify-content: flex-start;
+        translate: none;
+    }
+
+    .home__description{
+        translate: none;
+    }
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+
+}
 
 
 
