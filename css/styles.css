@@ -8,7 +8,7 @@
 body{
     background-color: #0f1014;
     color: #fdd4c5;
-    width: 80%;
+    width: 100%;
     margin: auto;
     font-family: "Fira Code", monospace;
 }
@@ -17,9 +17,9 @@ span{
     color: #e08573;
 }
 
-h1, h2, h3, .description{
-    width: 55%;
-}
+/*h1, h2, h3, .description{*/
+/*width: 55%;*/
+/*}*/
 
 a{
     text-decoration: none;
@@ -83,7 +83,6 @@ header{
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
-    background-image: var(--bs-navbar-toggler-icon-bg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -162,65 +161,68 @@ header{
 /*-----------------------------*/
 /*CSS PARA PRESENTACION*/
 
-.home__presentation--container{
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: 40% 25% auto;
-    grid-template-areas:
-            "title img"
-            "subtitle img"
-            "btn img";
-}
+/*.home__presentation--container{*/
+/*    display: grid;*/
+/*    grid-template-columns: 4fr 2fr;*/
+/*    grid-template-rows: 40% 25% auto;*/
+/*    grid-template-areas:*/
+/*            "title img"*/
+/*            "subtitle img"*/
+/*            "btn img";*/
+/*}*/
 
 .home__image{
-    grid-area: img;
-    width:37.5rem ;
-    height: 37.5rem;
+    /*grid-area: img;*/
+    width:23.4vw;
+    height: 46.5vh;
     border-radius: 50%;
     box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
     border: solid 0.188rem #e08573;
 }
 
 .home__title{
-    grid-area: title;
+    /*grid-area: title;*/
     font-size: 2.188rem;
     font-weight: bold;
     height: fit-content;
+    margin-bottom: 4rem;
 }
 .home__description{
-    grid-area: subtitle;
+    /*grid-area: subtitle;*/
     font-size: 1.25rem;
     font-weight: bold;
+    margin-bottom: 4rem;
+
 }
 .home__presentation-btn{
-    grid-area: btn;
+    /*grid-area: btn;*/
 }
 
 /*--------------------------------------------------------------------------*/
 
 /*HOME-ABOUT*/
-.home__about--container{
-    display: grid;
-    grid-template-columns: 90% ;
-    grid-template-rows: 1fr 2fr 20%;
-    grid-template-areas:
-            "title"
-            "descrip"
-            "btn";
-}
+/*.home__about--container{*/
+/*    display: grid;*/
+/*    grid-template-columns: 90% ;*/
+/*    grid-template-rows: 1fr 2fr 20%;*/
+/*    grid-template-areas:*/
+/*            "title"*/
+/*            "descrip"*/
+/*            "btn";*/
+/*}*/
 
 .home__about--title{
-    grid-area: title;
-    margin-top: 12rem;
+    /*grid-area: title;*/
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
 .home__about--descriptions{
-    grid-area: descrip;
+    /*grid-area: descrip;*/
 }
 
 .home__about--btn{
-    grid-area: btn;
+    /*grid-area: btn;*/
 }
 
 .btn_contact_me{
@@ -262,6 +264,8 @@ header{
 
 .skills_img{
     grid-area: img;
+    width:23.4vw;
+    height: 46.5vh;
 }
 
 .languages{
@@ -334,60 +338,61 @@ header{
 
 /*----------------------------------*/
 /*CONTACT US*/
-.home__contact--container{
-    display: grid;
-    grid-template-areas:
-            "title box"
-            "subtitle box"
-            ". box";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    margin-top: 12rem;
-    margin-bottom: 5rem;
-}
+/*.home__contact--container{*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            "title box"*/
+/*            "subtitle box"*/
+/*            ". box";*/
+/*    grid-template-columns: auto auto;*/
+/*    grid-template-rows: auto auto auto;*/
+/*    margin-top: 12rem;*/
+/*    margin-bottom: 5rem;*/
+/*}*/
 
 .home__contact-subtitle{
-    grid-area: title;
+    /*grid-area: title;*/
     margin-top: 12rem;
     margin-bottom: 2rem;
 }
 
 .home__contact--description{
-    grid-area: subtitle;
+    /*grid-area: subtitle;*/
 }
 
- .home__contact--box{
-     grid-area: box;
-     display: grid;
-     grid-template-areas:
-             "message"
-             "logo"
-             "logo2";
-     grid-template-columns: auto;
-     grid-template-rows: auto auto auto;
-     gap: 0.7rem;
-     box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-     border: solid 0.188rem #e08573;
-     padding: 1.5rem;
-     margin-bottom: 2rem;
- }
+ /*.home__contact--box{*/
+ /*    grid-area: box;*/
+ /*    display: grid;*/
+ /*    grid-template-areas:*/
+ /*            "message"*/
+ /*            "logo"*/
+ /*            "logo2";*/
+ /*    grid-template-columns: auto;*/
+ /*    grid-template-rows: auto auto auto;*/
+ /*    gap: 0.7rem;*/
+ /*    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;*/
+ /*    border: solid 0.188rem #e08573;*/
+ /*    padding: 1.5rem;*/
+ /*    margin-bottom: 2rem;*/
+ /*}*/
 
- .contact__box--title{
-     grid-area: message;
- }
+ /*.contact__box--title{*/
+ /*    grid-area: message;*/
+ /*}*/
 
- .contact__box--linkedin{
-     grid-area: logo;
- }
+ /*.contact__box--linkedin{*/
+ /*    grid-area: logo;*/
+ /*}*/
 
- .contact__box--email{
-     grid-area: logo2;
- }
+ /*.contact__box--email{*/
+ /*    grid-area: logo2;*/
+ /*}*/
 
  .contact__box--img{
      width: 2rem;
      height: 2rem;
-     translate: 0 0.5rem;
+     translate: 0 1.5rem;
+     margin-bottom: 4rem;
  }
 /*----------------------------*/
 /*ABOUT PAGE*/
@@ -737,9 +742,34 @@ input[type="submit"]:hover {
 /*-----------------------------------------------------*/
 /*INICIO MEDIA QUERIES*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
     /*COMUNES EN TODO EL DOC*/
 
+    body{
+      margin: auto;
+    }
+
+    .home__image{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .skills_img{
+        visibility: hidden;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+    .home__presentation-btn{
+        justify-content: center;
+    }
+
+    .subtitle{
+        margin-top: 10rem;
+    }
 }
 
 
