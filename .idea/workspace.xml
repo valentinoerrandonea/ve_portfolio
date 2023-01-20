@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/portfolio-clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/project-icons/iloveimg-resized.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/project-icons/santa-ana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/LOGO COLOR JPG-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/calculator.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/calculator.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/chess.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/chess.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/doom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/doom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/finance.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/finance.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/nasty.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/nasty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/redlab.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/redlab.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/snake-game.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/snake-game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/ulamspiral.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/ulamspiral.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about_me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/coming_soon.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coming_soon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KWzrdgcLuNK4Wir7ytBoDgBB1O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;HTML&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Mi unidad\--CODIGO--\portfolio-clone" />
+      <recent name="G:\Mi unidad\--CODIGO--\portfolio-clone\pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="" />
+      <created>1674105330809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674105330809</updated>
+      <workItem from="1674105332828" duration="269000" />
+      <workItem from="1674140203705" duration="9828000" />
+      <workItem from="1674165844369" duration="3953000" />
+      <workItem from="1674181945541" duration="2730000" />
+      <workItem from="1674185018535" duration="1007000" />
+      <workItem from="1674196109827" duration="571000" />
+      <workItem from="1674228059967" duration="4309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
