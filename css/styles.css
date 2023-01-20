@@ -8,8 +8,8 @@
 body{
     background-color: #0f1014;
     color: #fdd4c5;
-    width: 100%;
-    /*margin: auto;*/
+    width: 80%;
+    margin: auto;
     font-family: "Fira Code", monospace;
 }
 
@@ -24,6 +24,13 @@ a{
     color: #fdd4c5;
     font-family: "Fira Code", monospace;
 }
+
+a:hover {
+    font-weight: bolder;
+    color: #e08573
+}
+
+
 
 li{
     list-style: none;
@@ -752,7 +759,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 1400px) {
     .home__image{
         margin-left: 5rem;
-        translate: none;
+        translate: 650px -150px;
     }
 
     .skills_img{
@@ -764,7 +771,7 @@ input[type="submit"]:hover {
     }
 
     .home__description{
-        translate: 0 -300px;
+        translate: 0 -400px;
     }
 
     .home__presentation-btn{
@@ -777,13 +784,13 @@ input[type="submit"]:hover {
 
 
     .home__image{
-        width: 500px;
-        height: 500px;
-        translate: none;
+        width: 400px;
+        height: 400px;
+        translate: 80px -50px;
     }
 
     .home__presentation-btn{
-        translate: 0 -300px;
+        translate: 0 -125px;
         margin-left: auto;
     }
 
@@ -800,7 +807,7 @@ input[type="submit"]:hover {
     }
 
     .home__description{
-        translate: 0 -300px;
+        translate: 0 -150px;
     }
 
     .subtitle{
@@ -957,7 +964,42 @@ input[type="submit"]:hover {
 
 }
 
+@media screen and (max-width: 320px) {
 
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .home__image{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+    }
+    .skills_img{
+        visibility: hidden;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+    .home__presentation-btn{
+        justify-content: flex-start;
+        translate: none;
+    }
+
+    .home__description{
+        translate: none;
+    }
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+
+}
 
 
 
