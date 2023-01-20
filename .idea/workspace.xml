@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/portfolio-clone.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project-icons/iloveimg-resized.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project-icons/santa-ana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/LOGO COLOR JPG-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/calculator.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/calculator.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/chess.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/chess.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/doom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/doom.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/finance.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/finance.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/nasty.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/nasty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/redlab.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/redlab.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/snake-game.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/snake-game.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-icons/ulamspiral.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/project-icons/ulamspiral.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about_me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/coming_soon.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coming_soon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
-    </list>
+    <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="Home y Contact responsive. Actualice Headers y realice correcciones" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,11 +57,23 @@
       <workItem from="1674181945541" duration="2730000" />
       <workItem from="1674185018535" duration="1007000" />
       <workItem from="1674196109827" duration="571000" />
-      <workItem from="1674228059967" duration="4309000" />
+      <workItem from="1674228059967" duration="4670000" />
     </task>
+    <task id="LOCAL-00001" summary="Home y Contact responsive. Actualice Headers y realice correcciones">
+      <created>1674232833583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674232833583</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Home y Contact responsive. Actualice Headers y realice correcciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home y Contact responsive. Actualice Headers y realice correcciones" />
   </component>
 </project>
