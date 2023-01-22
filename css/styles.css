@@ -76,8 +76,7 @@ h1{
 }
 
 /*---------------------------------------------------------------*/
-/*HEADER*/
-
+/*NAV & HEADER*/
 header{
     color: #fdd4c5;
     border-bottom: 1px solid #e08573;
@@ -174,7 +173,7 @@ header{
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
 /*-----------------------------*/
-/*CSS PARA PRESENTACION*/
+/*HOME PRESENTACION*/
 .home__image{
     width:500px;
     height: 500px;
@@ -228,8 +227,7 @@ header{
 }
 
 /*--------------------------------------------------------------------------------*/
-/*GRID PARA SKILLS*/
-
+/*HOME - SKILLS*/
 .home__skills--title {
     margin-bottom: 2rem;
 }
@@ -256,7 +254,7 @@ header{
 
 
 /*---------------------------------*/
-/*PROJECTS*/
+/*PROJECTS / HOME-PROJECTS*/
 .card-img-top{
     width: auto;
     height: auto;
@@ -297,7 +295,7 @@ header{
     margin-top: 0;
 }
 /*----------------------------------*/
-/*CONTACT US*/
+/*HOME- CONTACT*/
 .home__contact-subtitle{
     margin-top: 12rem;
     margin-bottom: 2rem;
@@ -310,7 +308,7 @@ header{
      margin-bottom: 4rem;
  }
 /*----------------------------*/
-/*ABOUT PAGE*/
+/*ABOUT ME PAGE*/
 .about__container{
     display: grid;
     grid-template-areas:
@@ -412,8 +410,6 @@ header{
     grid-area: techOthers;
 }
 
-
-
 .skills__interpersonal--container{
     grid-area: skillsPersonal;
     display: grid;
@@ -433,11 +429,9 @@ header{
     grid-area: personalDescrip;
     margin-bottom: 3rem;
 }
-
 /*-----------------*/
 
 /*PROJECTS*/
-
 .projects__title{
     font-size: 36px;
 }
@@ -513,9 +507,8 @@ header{
     height: 35.5rem;
 }
 /*---------------------------------*/
-/*CONTACT*/
-/* FORM */
 
+/*CONTACT*/
 .contact__container{
     display: grid;
     grid-template-areas:
@@ -565,7 +558,7 @@ header{
     grid-area: contactForm;
     margin-top: 2rem;
 }
-
+/* Contact Form */
 input[type="text"],
 select,
 textarea {
@@ -610,6 +603,7 @@ input[type="submit"]:hover {
     grid-area: contactImg;
 }
 /*-------------------*/
+
 /*COMING SOON*/
 .comingsoon__container{
     display: grid;
@@ -648,14 +642,6 @@ input[type="submit"]:hover {
         translate: 650px -150px;
     }
 
-    .skills_img{
-        position: relative;
-        width: 250px;
-        height: 250px;
-        margin-left: 7rem;
-        translate: 1000px -450px;
-    }
-
     .home__description{
         translate: 0 -400px;
     }
@@ -663,14 +649,31 @@ input[type="submit"]:hover {
     .home__presentation-btn{
         translate: 0 -300px;
     }
+
+    .skills_img{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin-left: 7rem;
+        translate: 1000px -450px;
+    }
 }
 /*-------------------*/
 /*-------------------*/
 @media screen and (max-width: 1200px) {
+    .subtitle{
+        margin-top: 5rem;
+        translate: none;
+    }
+
     .home__image{
         width: 400px;
         height: 400px;
         translate: 80px -50px;
+    }
+
+    .home__description{
+        translate: 0 -150px;
     }
 
     .home__presentation-btn{
@@ -686,26 +689,21 @@ input[type="submit"]:hover {
         translate: 600px -450px;
     }
 
-    .home__contact--box{
-        visibility: hidden;
-    }
-
-    .home__description{
-        translate: 0 -150px;
-    }
-
-    .subtitle{
-        margin-top: 5rem;
-        translate: none;
-    }
-
     .home__skills--title{
         margin-top: 10rem;
         translate: none;
     }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
 }
 /*-------------------*/
 @media screen and (max-width: 1198px){
+    .subtitle{
+        margin-top: 10rem;
+    }
+
     .home__image{
         width: 300px;
         height: 300px;
@@ -719,6 +717,10 @@ input[type="submit"]:hover {
         margin-left: auto;
     }
 
+    .home__readme--btn{
+        justify-content: center;
+    }
+
     .skills_img{
         visibility: hidden;
         width: 0;
@@ -729,22 +731,25 @@ input[type="submit"]:hover {
     .home__contact--box{
         visibility: hidden;
     }
-
-
-    .subtitle{
-        margin-top: 10rem;
-    }
-
-    .home__readme--btn{
-        justify-content: center;
-    }
-
 }
-/*-------------------*/
 /*-------------------*/
 @media screen and (max-width: 998px) {
     *{
         transition: none;
+    }
+
+    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+        transition: none
+    }
+
+    .logo{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .subtitle{
+        margin-top: 10rem;
     }
 
     .home__image{
@@ -755,10 +760,7 @@ input[type="submit"]:hover {
         box-shadow: none;
         border: none;
     }
-
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
-        transition: none
-    }
+    
     .home__description{
         translate: 0 -50px;
     }
@@ -774,17 +776,22 @@ input[type="submit"]:hover {
         translate: none;
     }
 
+    .home__readme--btn{
+        justify-content: center;
+    }
+
     .home__contact--box{
         visibility: hidden;
     }
-
-
-    .subtitle{
-        margin-top: 10rem;
+}
+/*-------------------*/
+@media screen and (max-width: 768px) {
+    *{
+        transition: none;
     }
 
-    .home__readme--btn{
-        justify-content: center;
+    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+        transition: none
     }
 
     .logo{
@@ -792,11 +799,13 @@ input[type="submit"]:hover {
         width: 0;
         height: 0;
     }
-}
-/*-------------------*/
-@media screen and (max-width: 768px) {
-    *{
-        transition: none;
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+    .home__description{
+        translate: none;
     }
 
     .home__image{
@@ -807,9 +816,12 @@ input[type="submit"]:hover {
         box-shadow: none;
         border: none;
     }
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
-        transition: none
+
+    .home__presentation-btn{
+        justify-content: center;
+        translate: none;
     }
+    
 
     .skills_img{
         visibility: hidden;
@@ -821,29 +833,28 @@ input[type="submit"]:hover {
     .home__contact--box{
         visibility: hidden;
     }
-
-    .home__presentation-btn{
-        justify-content: center;
-        translate: none;
-    }
-    .home__description{
-        translate: none;
-    }
-    .subtitle{
-        margin-top: 10rem;
-    }
-
-    .logo{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
 }
-/*-------------------*/
 /*-------------------*/
 @media screen and (max-width: 576px) {
     *{
         transition: none;
+    }
+
+    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+        transition: none
+    }
+
+    .subtitle{
+        margin-top: 10rem;
+    }
+
+    .home__description{
+        translate: none;
+    }
+
+    .home__presentation-btn{
+        justify-content: flex-start;
+        translate: none;
     }
 
     .home__image{
@@ -854,9 +865,7 @@ input[type="submit"]:hover {
         box-shadow: none;
         border: none;
     }
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
-        transition: none
-    }
+
     .skills_img{
         visibility: hidden;
         translate: none;
@@ -865,21 +874,7 @@ input[type="submit"]:hover {
     .home__contact--box{
         visibility: hidden;
     }
-
-    .home__presentation-btn{
-        justify-content: flex-start;
-        translate: none;
-    }
-
-    .home__description{
-        translate: none;
-    }
-
-    .subtitle{
-        margin-top: 10rem;
-    }
 }
-/*-------------------*/
 /*-------------------*/
 @media screen and (max-width: 320px) {
     *{
@@ -889,35 +884,6 @@ input[type="submit"]:hover {
     body{
         width: 100%;
         margin: 0;
-    }
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
-        transition: none
-    }
-
-    .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-        box-shadow: none;
-        border: none;
-    }
-    .skills_img{
-        visibility: hidden;
-        translate: none;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
-    }
-
-    .home__presentation-btn{
-        justify-content: flex-start;
-        translate: none;
-    }
-
-    .home__description{
-        translate: none;
     }
 
     .subtitle{
@@ -929,14 +895,39 @@ input[type="submit"]:hover {
         width: 0;
         height: 0;
     }
+    
+    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+        transition: none
+    }
+
+    .home__description{
+        translate: none;
+    }
+
+    .home__image{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        translate: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .home__presentation-btn{
+        justify-content: flex-start;
+        translate: none;
+    }
+
+    .home__contact--box{
+        visibility: hidden;
+    }
+
+    .skills_img{
+        visibility: hidden;
+        translate: none;
+    }
 }
 /*-------------------*/
-
-
-
-
-
-
 
 
 /*INDEX*/

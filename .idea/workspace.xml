@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="Home y Contact responsive. Actualice Headers y realice correcciones" />
+    <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="Home y Contact responsive. Actualice Headers y realice correcciones">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,12 +30,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/My Drive/--CODIGO--/portfolio-clone&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -57,7 +65,15 @@
       <workItem from="1674181945541" duration="2730000" />
       <workItem from="1674185018535" duration="1007000" />
       <workItem from="1674196109827" duration="571000" />
-      <workItem from="1674228059967" duration="4670000" />
+      <workItem from="1674228059967" duration="5426000" />
+      <workItem from="1674259532775" duration="207000" />
+      <workItem from="1674259761309" duration="90000" />
+      <workItem from="1674259874023" duration="140000" />
+      <workItem from="1674260043694" duration="143000" />
+      <workItem from="1674261613968" duration="309000" />
+      <workItem from="1674263516822" duration="168000" />
+      <workItem from="1674266808705" duration="173000" />
+      <workItem from="1674346635660" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Home y Contact responsive. Actualice Headers y realice correcciones">
       <created>1674232833583</created>
