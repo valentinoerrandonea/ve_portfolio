@@ -1,0 +1,38 @@
+.exp {
+    .exp__box--subtitle {
+        margin: 1rem;
+    }
+
+    .exp__box--description {
+        margin: 1rem;
+    }
+
+    &__container {
+        .exp__title {
+            grid-area: expTitle;
+        }
+
+        .exp__subtitle {
+            grid-area: expSubtitle;
+        }
+
+        .exp__descrip {
+            grid-area: expDescrip;
+        }
+
+        &__box {
+
+            .junior {
+                grid-area: junior;
+            }
+
+            .hidden {
+                grid-area: hiddenS;
+            }
+
+            .redlab {
+                grid-area: redlab;
+            }
+        }
+    }
+}

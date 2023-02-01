@@ -1,0 +1,51 @@
+.home {
+    &__title {
+        font-size: 2.188rem;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 4rem;
+        translate: 0 -350px;
+    }
+
+    &__presentation-btn {
+        translate: 0 -300px;
+    }
+
+    &__about--title {
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    &__skills--title {
+        margin-bottom: 2rem;
+    }
+
+    &__skills--subtitle {
+        padding: 1rem;
+    }
+
+    .skillset {
+        padding: 1rem;
+    }
+
+    .projects__subtitle {
+        margin-top: 0;
+    }
+
+    &__contact-subtitle {
+        margin-top: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact__box--img {
+        width: 2rem;
+        height: 2rem;
+        translate: 0 1.5rem;
+        margin-bottom: 4rem;
+    }
+}

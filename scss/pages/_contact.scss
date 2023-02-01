@@ -1,0 +1,30 @@
+.contact {
+    .contact__title {
+        grid-area: contactTitle;
+    }
+
+    .contact__descrip {
+        grid-area: contactDescrip;
+        margin-bottom: 4rem;
+    }
+
+    .contact__descrip2 {
+        grid-area: contactDescrip2;
+    }
+
+    .contact__subtitle {
+        grid-area: contactSubtitle;
+        margin-bottom: 2rem;
+    }
+
+    .contact__subtitle2 {
+        grid-area: contactSubtitle2;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact__icons--box {
+        grid-area: contactBox;
+        display: flex;
+    }
+}

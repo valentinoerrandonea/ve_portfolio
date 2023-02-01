@@ -1,0 +1,37 @@
+.form__container {
+    border-radius: 5px;
+    width: 40%;
+    grid-area: contactForm;
+    margin-top: 2rem;
+}
+/* Contact Form */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e08573;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #0f1014 ;
+    font-family: "Fira Code", monospace;
+}
+
+input[type="submit"] {
+    background-color: #0f1014;
+    font-family: "Fira Code", monospace;
+    color: #fdd4c5;
+    padding: 12px 20px;
+    border: solid 1px #e08573;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #e08573;
+    color: #fdd4c5;
+    font-family: "Fira Code", monospace;
+}

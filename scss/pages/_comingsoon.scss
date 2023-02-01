@@ -1,0 +1,14 @@
+.comingsoon{
+    &__title{
+        grid-area: comingTitle;
+    }
+    
+    &__descrip{
+        grid-area: comingDescrip;
+    }
+    
+    &__btn{
+        grid-area: comingBtn;
+    }
+}
+

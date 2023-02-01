@@ -1,0 +1,92 @@
+.about {
+    &__container {
+        .about__title {
+            grid-area: aboutTitle;
+            font-size: 2.2rem;
+        }
+
+        .about__photo {
+            grid-area: aboutImg;
+            width: 35.5rem;
+            height: 35.5rem;
+            border-radius: 50%;
+            box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+            border: solid 0.188rem #e08573;
+        }
+
+
+        .about__subtitle {
+            grid-area: aboutSubtitle;
+            font-size: 1.8rem;
+        }
+
+        .about__description {
+            grid-area: aboutDescrip;
+        }
+
+
+
+        .about__skills--container {
+
+            .about__skills--subtitle {
+                grid-area: skillsTitle;
+            }
+
+            .about__skills--descriptions {
+                grid-area: skillsDescrip;
+            }
+
+            .skills__technical--container {
+
+                .skills__technical--title {
+                    grid-area: techTitle;
+                    font-size: 28px;
+                    margin-top: 6rem;
+                }
+
+                .skills__technical--descrip {
+                    grid-area: techDescrip;
+                }
+
+                .about__skills--languages {
+                    grid-area: techLang;
+                }
+
+                .about__skills--frameworks {
+                    grid-area: techFrameworks;
+                }
+
+                .about__skills--tools {
+                    grid-area: techTools;
+                }
+
+                .about__skills--others {
+                    grid-area: techOthers;
+                }
+            }
+
+            .skills__interpersonal--container {
+                .skills__interpersonal--subtitle {
+                    grid-area: personalTitle;
+                    margin-top: 3rem;
+                    font-size: 28px;
+                    margin-bottom: 0.5rem;
+                }
+
+                .skills__interpersonal--description {
+                    grid-area: personalDescrip;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .skills__subtitle {
+            font-size: 24px;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills__skillset {
+            font-size: 20px;
+        }
+    }
+}

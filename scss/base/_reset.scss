@@ -1,0 +1,44 @@
+/*COMUNES EN TODO EL DOC*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(15,16,20,1) 0%, rgba(29,31,37,1) 35%, rgba(50,53,64,1) 100%);
+    color: #fdd4c5;
+    width: 80%;
+    margin: auto;
+    font-family: "Fira Code", monospace;
+
+    span{
+        color: #e08573;
+    }
+
+    a{
+        text-decoration: none;
+        color: #fdd4c5;
+        font-family: "Fira Code", monospace;
+    }
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    
+}
+
+
+a:hover {
+    font-weight: bolder;
+    color: #e08573
+}
+
+
+
+
+
+
+
+

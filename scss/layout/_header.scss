@@ -1,0 +1,33 @@
+/*NAV & HEADER*/
+header{
+    // color: #fdd4c5;
+    border-bottom: 1px solid #e08573;
+    margin-bottom: 5rem;
+
+    .navbar-nav li a{
+        color: #fdd4c5;
+    }
+    
+    .navbar-nav li a:hover{
+        color: #e08573;
+        font-weight: bold;
+    }
+    
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-color: #e08573 ;
+    }
+    
+    .logo{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
