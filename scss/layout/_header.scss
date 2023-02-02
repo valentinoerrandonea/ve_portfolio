@@ -1,18 +1,17 @@
 /*NAV & HEADER*/
-header{
-    // color: #fdd4c5;
-    border-bottom: 1px solid #e08573;
+header {
+    border-bottom: 1px solid $secondaryColor;
     margin-bottom: 5rem;
 
-    .navbar-nav li a{
-        color: #fdd4c5;
+    .navbar-nav li a {
+        color: $primaryColor;
     }
-    
-    .navbar-nav li a:hover{
-        color: #e08573;
+
+    .navbar-nav li a:hover {
+        color: $secondaryColor;
         font-weight: bold;
     }
-    
+
     .navbar-toggler-icon {
         display: inline-block;
         width: 1.5em;
@@ -21,13 +20,11 @@ header{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        background-color: #e08573 ;
+        background-color: $secondaryColor ;
     }
-    
-    .logo{
+
+    .logo {
         height: 2rem;
         width: 2rem;
     }
 }
-
-

@@ -5,32 +5,31 @@ button {
     padding: 10px;
     background-color: transparent;
     text-decoration: none;
-    border: 2px solid #e08573;
+    border: 2px solid $secondaryColor;
     border-radius: 5px;
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
-    color: #e08573;
+    color: $secondaryColor;
 
-    .home__about--btn{
+    .home__about--btn {
         margin-top: 1rem;
         margin-left: 0.5rem;
-    
+
     }
-    .btn_contact_me{
+
+    .btn_contact_me {
         width: 15rem;
         height: 5rem;
         margin-right: 1.5rem;
     }
-    
-    .btn_resume{
+
+    .btn_resume {
         width: 15rem;
         height: 5rem;
     }
 }
 
 button:hover {
-    box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-    border: 0.188rem solid #e08573;
+    box-shadow: 0 0 0.625rem 0 $secondaryColor inset, 0 0 1.25rem 0.125rem $secondaryColor;
+    border: 0.188rem solid $secondaryColor;
 }
-
-

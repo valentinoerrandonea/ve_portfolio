@@ -28,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/My Drive/--CODIGO--/portfolio-clone-copy",
+    "last_opened_file_path": "G:/Mi unidad/--CODIGO--/portfolio-clone",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +80,8 @@
       <workItem from="1674370893020" duration="95000" />
       <workItem from="1674371061050" duration="605000" />
       <workItem from="1674710158271" duration="86000" />
+      <workItem from="1675295598008" duration="44000" />
+      <workItem from="1675302384056" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Home y Contact responsive. Actualice Headers y realice correcciones">
       <created>1674232833583</created>

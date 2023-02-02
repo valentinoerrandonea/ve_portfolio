@@ -10,8 +10,8 @@
             width: 35.5rem;
             height: 35.5rem;
             border-radius: 50%;
-            box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-            border: solid 0.188rem #e08573;
+            box-shadow: 0 0 0.625rem 0 $secondaryColor inset, 0 0 1.25rem 0.125rem $secondaryColor;
+            border: solid 0.188rem $secondaryColor;
         }
 
 

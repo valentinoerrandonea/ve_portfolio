@@ -1,10 +1,10 @@
-.home{
-    &__image{
-        width:500px;
+.home {
+    &__image {
+        width: 500px;
         height: 500px;
         border-radius: 50%;
-        box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-        border: solid 0.188rem #e08573;
+        box-shadow: 0 0 0.625rem 0 $secondaryColor inset, 0 0 1.25rem 0.125rem $secondaryColor;
+        border: solid 0.188rem $secondaryColor;
         margin-left: 2rem;
         translate: 100px 0;
     }
@@ -16,31 +16,31 @@
     }
 }
 
-.exp{
-    &__img{
+.exp {
+    &__img {
         grid-area: expImg;
         width: 35.5rem;
         height: 35.5rem;
     }
 }
 
-.contact{
-    &__icon{
+.contact {
+    &__icon {
         width: 2rem;
         height: 2rem;
         margin-right: 1rem;
         translate: 5px -5px;
     }
-    
-    &__img{
+
+    &__img {
         width: 50rem;
         height: 50rem;
         grid-area: contactImg;
     }
 }
 
-.comingsoon{
-    &__img{
+.comingsoon {
+    &__img {
         grid-area: comingImg;
         width: 50rem;
         height: 50rem;
