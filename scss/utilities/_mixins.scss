@@ -1,0 +1,7 @@
+@mixin grid_creator ($col, $row, $area, $gap) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+    gap: $gap;
+}

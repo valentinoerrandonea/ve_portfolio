@@ -1,9 +1,12 @@
 .exp {
-    .exp__box--subtitle {
-        margin: 1rem;
+    &__box--subtitle {
+        margin-top: 5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
     }
 
-    .exp__box--description {
+    &__box--description {
         margin: 1rem;
     }
 

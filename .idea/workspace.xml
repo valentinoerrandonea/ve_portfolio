@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c451015-734a-4f4a-a861-9bd431f0d0ab" name="Changes" comment="Home y Contact responsive. Actualice Headers y realice correcciones">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about_me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/coming_soon.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coming_soon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/layout/_grids.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_grids.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/utilities/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/utilities/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/utilities/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/views/_media-queries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/views/_media-queries.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/Mi unidad/--CODIGO--/portfolio-clone",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/--CODIGO--/portfolio-clone&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "HTML"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;HTML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Mi unidad\--CODIGO--\portfolio-clone" />
@@ -82,6 +96,7 @@
       <workItem from="1674710158271" duration="86000" />
       <workItem from="1675295598008" duration="44000" />
       <workItem from="1675302384056" duration="25000" />
+      <workItem from="1675366620975" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="Home y Contact responsive. Actualice Headers y realice correcciones">
       <created>1674232833583</created>

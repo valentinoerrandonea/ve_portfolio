@@ -1,294 +1,408 @@
 /*INICIO MEDIA QUERIES*/
 /*-------------------*/
 @media screen and (max-width: 1400px) {
-    .home__image{
-        margin-left: 5rem;
-        translate: 650px -150px;
-    }
+    .home {
+        .home__image {
+            margin-left: 5rem;
+            translate: 650px -150px;
+        }
 
-    .home__description{
-        translate: 0 -400px;
-    }
+        .home__description {
+            translate: 0 -400px;
+        }
 
-    .home__presentation-btn{
-        translate: 0 -300px;
-    }
-
-    .skills_img{
-        position: relative;
-        width: 250px;
-        height: 250px;
-        margin-left: 7rem;
-        translate: 1000px -450px;
+        .home__presentation-btn {
+            translate: 0 -300px;
+        }
     }
 }
-/*-------------------*/
+
 /*-------------------*/
 @media screen and (max-width: 1200px) {
-    .subtitle{
-        margin-top: 5rem;
-        translate: none;
-    }
+    .home {
+        .subtitle {
+            margin-top: 5rem;
+            translate: none;
+        }
 
-    .home__image{
-        width: 400px;
-        height: 400px;
-        translate: 80px -50px;
-    }
+        .home__image {
+            width: 400px;
+            height: 400px;
+            translate: 80px -50px;
+        }
 
-    .home__description{
-        translate: 0 -150px;
-    }
+        .home__description {
+            translate: 0 -150px;
+        }
 
-    .home__presentation-btn{
-        translate: 0 -125px;
-        margin-left: auto;
-    }
+        .home__presentation-btn {
+            translate: 0 -125px;
+            margin-left: auto;
+        }
 
-    .skills_img{
-        position: relative;
-        width: 250px;
-        height: 250px;
-        margin-left: 7rem;
-        translate: 600px -450px;
-    }
 
-    .home__skills--title{
-        margin-top: 10rem;
-        translate: none;
-    }
+        .home__skills--title {
+            margin-top: 10rem;
+            translate: none;
+        }
 
-    .home__contact--box{
-        visibility: hidden;
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 }
+
 /*-------------------*/
-@media screen and (max-width: 1198px){
-    .subtitle{
-        margin-top: 10rem;
-    }
+@media screen and (max-width: 1198px) {
+    .home {
+        .subtitle {
+            margin-top: 10rem;
+        }
 
-    .home__image{
-        width: 300px;
-        height: 300px;
-        translate: 700px 75px;
-    }
-    .home__description{
-        translate: 0 -300px;
-    }
-    .home__presentation-btn{
-        translate: 0 -250px;
-        margin-left: auto;
-    }
+        .home__image {
+            width: 300px;
+            height: 300px;
+            translate: 700px 75px;
+        }
 
-    .home__readme--btn{
-        justify-content: center;
-    }
+        .home__description {
+            translate: 0 -300px;
+        }
 
-    .skills_img{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-    }
+        .home__presentation-btn {
+            translate: 0 -250px;
+            margin-left: auto;
+        }
 
-    .home__contact--box{
-        visibility: hidden;
+        .home__readme--btn {
+            justify-content: center;
+        }
+
+
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 }
+
 /*-------------------*/
 @media screen and (max-width: 998px) {
-    *{
+    * {
         transition: none;
     }
 
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+    .wow,
+    .animate__animated,
+    .animate__backInDown,
+    .animate__backInLeft,
+    .animate__backInRight,
+    .animate__backInUp {
         transition: none
     }
 
-    .logo{
+    .logo {
         visibility: hidden;
         width: 0;
         height: 0;
     }
 
-    .subtitle{
-        margin-top: 10rem;
+    .home {
+        .subtitle {
+            margin-top: 10rem;
+        }
+
+        .home__image {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            translate: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        .home__description {
+            translate: 0 -50px;
+        }
+
+        .home__presentation-btn {
+            translate: 0 -50px;
+            margin-left: auto;
+        }
+
+        .home__readme--btn {
+            justify-content: center;
+        }
+
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 
-    .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-        box-shadow: none;
-        border: none;
-    }
-    
-    .home__description{
-        translate: 0 -50px;
-    }
-    .home__presentation-btn{
-        translate: 0 -50px;
-        margin-left: auto;
-    }
+    .about {
+        .about__container {
+            @include grid_creator(100%,
+                repeat(4, auto),
+                "aboutTitle ."
+                "aboutSubtitle ."
+                "aboutDescrip ."
+                "aboutSkills aboutSkills",
+                auto);
 
-    .skills_img{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-    }
-
-    .home__readme--btn{
-        justify-content: center;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
+            .about__skills--container {
+                grid-area: aboutSkills;
+                @include grid_creator(100%,
+                    auto,
+                    "skillsTitle"
+                    "skillsDescrip"
+                    "skillsTech"
+                    "skillsPersonal",
+                    auto);
+            }
+        }
     }
 }
+
 /*-------------------*/
 @media screen and (max-width: 768px) {
-    *{
+    * {
         transition: none;
     }
 
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+    .wow,
+    .animate__animated,
+    .animate__backInDown,
+    .animate__backInLeft,
+    .animate__backInRight,
+    .animate__backInUp {
         transition: none
     }
 
-    .logo{
+    .logo {
         visibility: hidden;
         width: 0;
         height: 0;
     }
 
-    .subtitle{
-        margin-top: 10rem;
+    .home {
+        .subtitle {
+            margin-top: 10rem;
+        }
+
+        .home__description {
+            translate: none;
+        }
+
+        .home__image {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            translate: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        .home__presentation-btn {
+            justify-content: center;
+            translate: none;
+        }
+
+
+
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 
-    .home__description{
-        translate: none;
-    }
+    .exp {
+        &__container {
+            @include grid_creator(100%,
+                auto,
+                "expTitle"
+                "expSubtitle"
+                "expDescrip"
+                "experiences",
+                2rem);
+        }
 
-    .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-        box-shadow: none;
-        border: none;
-    }
-
-    .home__presentation-btn{
-        justify-content: center;
-        translate: none;
-    }
-    
-
-    .skills_img{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
+        &__img {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
     }
 }
+
 /*-------------------*/
 @media screen and (max-width: 576px) {
-    *{
+    * {
         transition: none;
     }
 
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+    .wow,
+    .animate__animated,
+    .animate__backInDown,
+    .animate__backInLeft,
+    .animate__backInRight,
+    .animate__backInUp {
         transition: none
     }
 
-    .subtitle{
-        margin-top: 10rem;
+    .home {
+        .subtitle {
+            margin-top: 10rem;
+        }
+
+        .home__description {
+            translate: none;
+        }
+
+        .home__presentation-btn {
+            justify-content: flex-start;
+            translate: none;
+        }
+
+        .home__image {
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
+            translate: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 
-    .home__description{
-        translate: none;
+    .about {
+        .skills__skillset {
+            font-size: 15px;
+        }
     }
 
-    .home__presentation-btn{
-        justify-content: flex-start;
-        translate: none;
-    }
+    .exp {
+        &__container {
+            @include grid_creator(100%,
+                auto,
+                "expTitle"
+                "expSubtitle"
+                "expDescrip"
+                "experiences",
+                2rem);
+        }
 
-    .home__image{
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-        translate: none;
-        box-shadow: none;
-        border: none;
-    }
-
-    .skills_img{
-        visibility: hidden;
-        translate: none;
-    }
-
-    .home__contact--box{
-        visibility: hidden;
+        &__img {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
     }
 }
+
 /*-------------------*/
 @media screen and (max-width: 320px) {
-    *{
+    * {
         transition: none;
     }
 
-    body{
+    body {
         width: 100%;
         margin: 0;
+        padding: 20px;
     }
 
-    .subtitle{
-        margin-top: 10rem;
-    }
-
-    .logo{
+    .logo {
         visibility: hidden;
         width: 0;
         height: 0;
     }
-    
-    .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp{
+
+    .wow,
+    .animate__animated,
+    .animate__backInDown,
+    .animate__backInLeft,
+    .animate__backInRight,
+    .animate__backInUp {
         transition: none
     }
 
-    .home__description{
-        translate: none;
+    .home {
+        .subtitle {
+            margin-top: 10rem;
+            font-size: 20px;
+        }
+
+        .home__description {
+            translate: none;
+            font-size: 16px;
+        }
+
+        .home__image {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            translate: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        .home__presentation-btn {
+            justify-content: flex-start;
+            translate: none;
+        }
+
+        .home__contact--box {
+            visibility: hidden;
+        }
     }
 
-    .home__image{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        translate: none;
-        box-shadow: none;
-        border: none;
+    .about {
+        &__subtitle {
+            margin-top: 5rem
+        }
+
+        .about__container {
+            @include grid_creator(100%,
+                repeat(4, auto),
+                "aboutTitle ."
+                "aboutSubtitle ."
+                "aboutDescrip ."
+                "aboutSkills aboutSkills",
+                auto);
+
+            .about__skills--container {
+                grid-area: aboutSkills;
+                @include grid_creator(100%,
+                    auto,
+                    "skillsTitle"
+                    "skillsDescrip"
+                    "skillsTech"
+                    "skillsPersonal",
+                    auto);
+            }
+        }
     }
 
-    .home__presentation-btn{
-        justify-content: flex-start;
-        translate: none;
-    }
+    .exp {
+        &__container {
+            @include grid_creator(100%,
+                auto,
+                "expTitle"
+                "expSubtitle"
+                "expDescrip"
+                "experiences",
+                2rem);
 
-    .home__contact--box{
-        visibility: hidden;
-    }
+            .description {
+                font-size: 16px;
+            }
+        }
 
-    .skills_img{
-        visibility: hidden;
-        translate: none;
+        &__img {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
     }
 }
-/*-------------------*/

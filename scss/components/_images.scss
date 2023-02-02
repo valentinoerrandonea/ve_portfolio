@@ -9,18 +9,13 @@
         translate: 100px 0;
     }
 
-    .skills_img {
-        width: 300px;
-        height: 300px;
-        translate: 1000px -500px;
-    }
 }
 
 .exp {
     &__img {
         grid-area: expImg;
-        width: 35.5rem;
-        height: 35.5rem;
+        width: 30vw;
+        height: auto;
     }
 }
 

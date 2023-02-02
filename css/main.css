@@ -7,14 +7,18 @@
 }
 
 body {
-  background: linear-gradient(90deg, rgb(15, 16, 20) 0%, rgb(29, 31, 37) 35%, rgb(50, 53, 64) 100%);
+  background-image: url(/assets/images/bg-imh/mesh-gradient.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   color: #fdd4c5;
   width: 80%;
   margin: auto;
   font-family: "Fira Code", monospace;
 }
 body span {
-  color: #e08573;
+  color: rgb(224, 133, 115);
 }
 body a {
   text-decoration: none;
@@ -27,10 +31,12 @@ body ul li {
 
 a:hover {
   font-weight: bolder;
-  color: #e08573;
+  color: rgb(224, 133, 115);
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: bolder;
 }
 
@@ -54,10 +60,10 @@ button {
   padding: 10px;
   background-color: transparent;
   text-decoration: none;
-  border: 2px solid #e08573;
+  border: 2px solid rgb(224, 133, 115);
   border-radius: 5px;
   transition: all 0.15s ease-in-out;
-  color: #e08573;
+  color: rgb(224, 133, 115);
 }
 button .home__about--btn {
   margin-top: 1rem;
@@ -74,54 +80,70 @@ button .btn_resume {
 }
 
 button:hover {
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-  border: 0.188rem solid #e08573;
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
+  border: 0.188rem solid rgb(224, 133, 115);
 }
 
 .about__container {
   display: grid;
-  grid-template-areas: "aboutTitle aboutImg" "aboutSubtitle aboutImg" "aboutDescrip aboutImg" "aboutSkills aboutSkills";
   grid-template-columns: 70% 30%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "aboutTitle ." "aboutSubtitle ." "aboutDescrip ." "aboutSkills aboutSkills";
+  gap: auto;
 }
 .about__container .about__skills--container {
   grid-area: aboutSkills;
   display: grid;
-  grid-template-areas: "skillsTitle" "skillsDescrip" "skillsTech" "skillsPersonal";
   grid-template-columns: 70%;
+  grid-template-rows: auto;
+  grid-template-areas: "skillsTitle" "skillsDescrip" "skillsTech" "skillsPersonal";
+  gap: auto;
 }
 .about__container .about__skills--container .skills__technical--container {
   grid-area: skillsTech;
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "techTitle" "techDescrip" "techLang" "techFrameworks" "techTools" "techOthers";
   gap: 1rem;
 }
 .about__container .about__skills--container .skills__interpersonal--container {
   grid-area: skillsPersonal;
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "personalTitle" "personalDescrip";
+  gap: auto;
 }
 
 .exp__container {
   display: grid;
-  grid-template-areas: "expTitle ." "expSubtitle expImg" "expDescrip expImg" "experiences expImg";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "expTitle ." "expSubtitle expImg" "expDescrip expImg" "experiences experiences";
   gap: 2rem;
 }
 .exp__container .exp__box {
   grid-area: experiences;
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "junior" "hiddenS" "redlab";
   gap: 4rem;
 }
 
 .contact__container {
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "contactTitle contactImg" "contactDescrip contactImg" "contactSubtitle contactImg" "contactBox contactImg" "contactSubtitle2 contactImg" "contactDescrip2 contactImg" "form contactImg";
   gap: 2rem;
 }
 
 .comingsoon__container {
   display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: "comingTitle" "comingDescrip" "comingBtn" "comingImg";
   gap: 2rem;
 }
@@ -137,8 +159,8 @@ button:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 2px solid #e08573;
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
+  border: 2px solid rgb(224, 133, 115);
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -147,21 +169,22 @@ button:hover {
   background-color: #0f1014;
 }
 
-.btn, .btn-primary {
+.btn,
+.btn-primary {
   background-color: #0f1014;
-  border: 1px solid #e08573;
+  border: 1px solid rgb(224, 133, 115);
   justify-content: center;
 }
 
 .btn:hover {
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-  border: 0.188rem solid #e08573;
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
+  border: 0.188rem solid rgb(224, 133, 115);
   background-color: #0f1014;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-  border: 0.188rem solid #e08573;
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
+  border: 0.188rem solid rgb(224, 133, 115);
   background-color: #0f1014;
 }
 
@@ -169,21 +192,16 @@ button:hover {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-  border: solid 0.188rem #e08573;
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
+  border: solid 0.188rem rgb(224, 133, 115);
   margin-left: 2rem;
   translate: 100px 0;
-}
-.home .skills_img {
-  width: 300px;
-  height: 300px;
-  translate: 1000px -500px;
 }
 
 .exp__img {
   grid-area: expImg;
-  width: 35.5rem;
-  height: 35.5rem;
+  width: 30vw;
+  height: auto;
 }
 
 .contact__icon {
@@ -207,14 +225,14 @@ button:hover {
 
 /*NAV & HEADER*/
 header {
-  border-bottom: 1px solid #e08573;
+  border-bottom: 1px solid rgb(224, 133, 115);
   margin-bottom: 5rem;
 }
 header .navbar-nav li a {
   color: #fdd4c5;
 }
 header .navbar-nav li a:hover {
-  color: #e08573;
+  color: rgb(224, 133, 115);
   font-weight: bold;
 }
 header .navbar-toggler-icon {
@@ -225,7 +243,7 @@ header .navbar-toggler-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-color: #e08573;
+  background-color: rgb(224, 133, 115);
 }
 header .logo {
   height: 2rem;
@@ -318,7 +336,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #e08573;
+  border: 1px solid rgb(224, 133, 115);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -333,20 +351,20 @@ input[type=submit] {
   font-family: "Fira Code", monospace;
   color: #fdd4c5;
   padding: 12px 20px;
-  border: solid 1px #e08573;
+  border: solid 1px rgb(224, 133, 115);
   cursor: pointer;
   margin-bottom: 2rem;
 }
 
 input[type=submit]:hover {
-  background-color: #e08573;
+  background-color: rgb(224, 133, 115);
   color: #fdd4c5;
   font-family: "Fira Code", monospace;
 }
 
 /*INDEX*/
 .body {
-  background: linear-gradient(90deg, #a1584a 0%, #e08573 35%, #fdd4c5 100%);
+  background: linear-gradient(90deg, #a1584a 0%, rgb(224, 133, 115) 35%, #fdd4c5 100%);
   background-size: 400% 400%;
   -webkit-animation: gradient 6s ease infinite;
           animation: gradient 6s ease infinite;
@@ -631,8 +649,8 @@ input[type=submit]:hover {
   width: 35.5rem;
   height: 35.5rem;
   border-radius: 50%;
-  box-shadow: 0 0 0.625rem 0 #e08573 inset, 0 0 1.25rem 0.125rem #e08573;
-  border: solid 0.188rem #e08573;
+  box-shadow: 0 0 0.625rem 0 rgb(224, 133, 115) inset, 0 0 1.25rem 0.125rem rgb(224, 133, 115);
+  border: solid 0.188rem rgb(224, 133, 115);
 }
 .about__container .about__subtitle {
   grid-area: aboutSubtitle;
@@ -685,10 +703,13 @@ input[type=submit]:hover {
   font-size: 20px;
 }
 
-.exp .exp__box--subtitle {
-  margin: 1rem;
+.exp__box--subtitle {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
-.exp .exp__box--description {
+.exp__box--description {
   margin: 1rem;
 }
 .exp__container .exp__title {
@@ -762,85 +783,64 @@ input[type=submit]:hover {
 /*INICIO MEDIA QUERIES*/
 /*-------------------*/
 @media screen and (max-width: 1400px) {
-  .home__image {
+  .home .home__image {
     margin-left: 5rem;
     translate: 650px -150px;
   }
-  .home__description {
+  .home .home__description {
     translate: 0 -400px;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     translate: 0 -300px;
-  }
-  .skills_img {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin-left: 7rem;
-    translate: 1000px -450px;
   }
 }
 /*-------------------*/
-/*-------------------*/
 @media screen and (max-width: 1200px) {
-  .subtitle {
+  .home .subtitle {
     margin-top: 5rem;
     translate: none;
   }
-  .home__image {
+  .home .home__image {
     width: 400px;
     height: 400px;
     translate: 80px -50px;
   }
-  .home__description {
+  .home .home__description {
     translate: 0 -150px;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     translate: 0 -125px;
     margin-left: auto;
   }
-  .skills_img {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin-left: 7rem;
-    translate: 600px -450px;
-  }
-  .home__skills--title {
+  .home .home__skills--title {
     margin-top: 10rem;
     translate: none;
   }
-  .home__contact--box {
+  .home .home__contact--box {
     visibility: hidden;
   }
 }
 /*-------------------*/
 @media screen and (max-width: 1198px) {
-  .subtitle {
+  .home .subtitle {
     margin-top: 10rem;
   }
-  .home__image {
+  .home .home__image {
     width: 300px;
     height: 300px;
     translate: 700px 75px;
   }
-  .home__description {
+  .home .home__description {
     translate: 0 -300px;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     translate: 0 -250px;
     margin-left: auto;
   }
-  .home__readme--btn {
+  .home .home__readme--btn {
     justify-content: center;
   }
-  .skills_img {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    translate: none;
-  }
-  .home__contact--box {
+  .home .home__contact--box {
     visibility: hidden;
   }
 }
@@ -849,7 +849,12 @@ input[type=submit]:hover {
   * {
     transition: none;
   }
-  .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp {
+  .wow,
+.animate__animated,
+.animate__backInDown,
+.animate__backInLeft,
+.animate__backInRight,
+.animate__backInUp {
     transition: none;
   }
   .logo {
@@ -857,10 +862,10 @@ input[type=submit]:hover {
     width: 0;
     height: 0;
   }
-  .subtitle {
+  .home .subtitle {
     margin-top: 10rem;
   }
-  .home__image {
+  .home .home__image {
     visibility: hidden;
     width: 0;
     height: 0;
@@ -868,24 +873,33 @@ input[type=submit]:hover {
     box-shadow: none;
     border: none;
   }
-  .home__description {
+  .home .home__description {
     translate: 0 -50px;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     translate: 0 -50px;
     margin-left: auto;
   }
-  .skills_img {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    translate: none;
-  }
-  .home__readme--btn {
+  .home .home__readme--btn {
     justify-content: center;
   }
-  .home__contact--box {
+  .home .home__contact--box {
     visibility: hidden;
+  }
+  .about .about__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "aboutTitle ." "aboutSubtitle ." "aboutDescrip ." "aboutSkills aboutSkills";
+    gap: auto;
+  }
+  .about .about__container .about__skills--container {
+    grid-area: aboutSkills;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "skillsTitle" "skillsDescrip" "skillsTech" "skillsPersonal";
+    gap: auto;
   }
 }
 /*-------------------*/
@@ -893,7 +907,12 @@ input[type=submit]:hover {
   * {
     transition: none;
   }
-  .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp {
+  .wow,
+.animate__animated,
+.animate__backInDown,
+.animate__backInLeft,
+.animate__backInRight,
+.animate__backInUp {
     transition: none;
   }
   .logo {
@@ -901,13 +920,13 @@ input[type=submit]:hover {
     width: 0;
     height: 0;
   }
-  .subtitle {
+  .home .subtitle {
     margin-top: 10rem;
   }
-  .home__description {
+  .home .home__description {
     translate: none;
   }
-  .home__image {
+  .home .home__image {
     visibility: hidden;
     width: 0;
     height: 0;
@@ -915,18 +934,24 @@ input[type=submit]:hover {
     box-shadow: none;
     border: none;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     justify-content: center;
     translate: none;
   }
-  .skills_img {
+  .home .home__contact--box {
+    visibility: hidden;
+  }
+  .exp__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "expTitle" "expSubtitle" "expDescrip" "experiences";
+    gap: 2rem;
+  }
+  .exp__img {
     visibility: hidden;
     width: 0;
     height: 0;
-    translate: none;
-  }
-  .home__contact--box {
-    visibility: hidden;
   }
 }
 /*-------------------*/
@@ -934,20 +959,25 @@ input[type=submit]:hover {
   * {
     transition: none;
   }
-  .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp {
+  .wow,
+.animate__animated,
+.animate__backInDown,
+.animate__backInLeft,
+.animate__backInRight,
+.animate__backInUp {
     transition: none;
   }
-  .subtitle {
+  .home .subtitle {
     margin-top: 10rem;
   }
-  .home__description {
+  .home .home__description {
     translate: none;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     justify-content: flex-start;
     translate: none;
   }
-  .home__image {
+  .home .home__image {
     visibility: hidden;
     width: 0px;
     height: 0px;
@@ -955,12 +985,23 @@ input[type=submit]:hover {
     box-shadow: none;
     border: none;
   }
-  .skills_img {
+  .home .home__contact--box {
     visibility: hidden;
-    translate: none;
   }
-  .home__contact--box {
+  .about .skills__skillset {
+    font-size: 15px;
+  }
+  .exp__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "expTitle" "expSubtitle" "expDescrip" "experiences";
+    gap: 2rem;
+  }
+  .exp__img {
     visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }
 /*-------------------*/
@@ -971,22 +1012,30 @@ input[type=submit]:hover {
   body {
     width: 100%;
     margin: 0;
-  }
-  .subtitle {
-    margin-top: 10rem;
+    padding: 20px;
   }
   .logo {
     visibility: hidden;
     width: 0;
     height: 0;
   }
-  .wow, .animate__animated, .animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp {
+  .wow,
+.animate__animated,
+.animate__backInDown,
+.animate__backInLeft,
+.animate__backInRight,
+.animate__backInUp {
     transition: none;
   }
-  .home__description {
-    translate: none;
+  .home .subtitle {
+    margin-top: 10rem;
+    font-size: 20px;
   }
-  .home__image {
+  .home .home__description {
+    translate: none;
+    font-size: 16px;
+  }
+  .home .home__image {
     visibility: hidden;
     width: 0;
     height: 0;
@@ -994,16 +1043,44 @@ input[type=submit]:hover {
     box-shadow: none;
     border: none;
   }
-  .home__presentation-btn {
+  .home .home__presentation-btn {
     justify-content: flex-start;
     translate: none;
   }
-  .home__contact--box {
+  .home .home__contact--box {
     visibility: hidden;
   }
-  .skills_img {
-    visibility: hidden;
-    translate: none;
+  .about__subtitle {
+    margin-top: 5rem;
   }
-}
-/*-------------------*//*# sourceMappingURL=main.css.map */
+  .about .about__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "aboutTitle ." "aboutSubtitle ." "aboutDescrip ." "aboutSkills aboutSkills";
+    gap: auto;
+  }
+  .about .about__container .about__skills--container {
+    grid-area: aboutSkills;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "skillsTitle" "skillsDescrip" "skillsTech" "skillsPersonal";
+    gap: auto;
+  }
+  .exp__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "expTitle" "expSubtitle" "expDescrip" "experiences";
+    gap: 2rem;
+  }
+  .exp__container .description {
+    font-size: 16px;
+  }
+  .exp__img {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
