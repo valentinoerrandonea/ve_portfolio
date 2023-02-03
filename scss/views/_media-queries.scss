@@ -50,6 +50,12 @@
             visibility: hidden;
         }
     }
+
+    .contact {
+        .form__container {
+            width: 80%;
+        }
+    }
 }
 
 /*-------------------*/
@@ -127,6 +133,7 @@
         .home__presentation-btn {
             translate: 0 -50px;
             margin-left: auto;
+
         }
 
         .home__readme--btn {
@@ -158,6 +165,23 @@
                     "skillsPersonal",
                     auto);
             }
+        }
+    }
+
+    .contact {
+
+        .form__container {
+            width: 80%;
+        }
+
+        &__img {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        &__subtitle {
+            margin-top: 0;
         }
     }
 }
@@ -230,6 +254,22 @@
             height: 0;
         }
     }
+
+    .contact {
+        .form__container {
+            width: 100%;
+        }
+
+        &__img {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        &__subtitle {
+            margin-top: 0;
+        }
+    }
 }
 
 /*-------------------*/
@@ -298,6 +338,22 @@
             height: 0;
         }
     }
+
+    .contact {
+        .form__container {
+            width: 100%;
+        }
+
+        &__img {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        &__subtitle {
+            margin-top: 0;
+        }
+    }
 }
 
 /*-------------------*/
@@ -309,7 +365,7 @@
     body {
         width: 100%;
         margin: 0;
-        padding: 20px;
+        padding: 10px;
     }
 
     .logo {
@@ -403,6 +459,22 @@
             visibility: hidden;
             width: 0;
             height: 0;
+        }
+    }
+
+    .contact {
+        .form__container {
+            width: 100%;
+        }
+
+        &__img {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        &__subtitle {
+            margin-top: 0;
         }
     }
 }

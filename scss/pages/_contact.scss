@@ -23,6 +23,11 @@
         margin-bottom: 2rem;
     }
 
+    .contact__linkedin {
+        text-decoration: underline;
+        color: $secondaryColor;
+    }
+
     .contact__icons--box {
         grid-area: contactBox;
         display: flex;

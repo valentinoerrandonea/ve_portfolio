@@ -28,8 +28,8 @@
     }
 
     &__img {
-        width: 50rem;
-        height: 50rem;
+        width: 30vw;
+        height: auto;
         grid-area: contactImg;
     }
 }
@@ -37,8 +37,8 @@
 .comingsoon {
     &__img {
         grid-area: comingImg;
-        width: 50rem;
-        height: 50rem;
+        width: 30vw;
+        height: auto;
         margin: auto;
     }
 }

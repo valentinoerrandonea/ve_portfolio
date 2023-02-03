@@ -67,6 +67,7 @@ button {
 }
 button .home__about--btn {
   margin-top: 1rem;
+  margin-right: 1rem;
   margin-left: 0.5rem;
 }
 button .btn_contact_me {
@@ -77,6 +78,7 @@ button .btn_contact_me {
 button .btn_resume {
   width: 15rem;
   height: 5rem;
+  margin-left: 1.5rem;
 }
 
 button:hover {
@@ -211,15 +213,15 @@ button:hover {
   translate: 5px -5px;
 }
 .contact__img {
-  width: 50rem;
-  height: 50rem;
+  width: 30vw;
+  height: auto;
   grid-area: contactImg;
 }
 
 .comingsoon__img {
   grid-area: comingImg;
-  width: 50rem;
-  height: 50rem;
+  width: 30vw;
+  height: auto;
   margin: auto;
 }
 
@@ -254,19 +256,19 @@ header .logo {
   background-color: transparent;
   width: 100%;
   text-align: left;
-  padding: 45px 50px;
+  padding: 2.813rem 3.125rem;
   border-top: 1px solid #fdd4c5;
 }
 
 .footer-distributed .footer-left ul {
   color: #fdd4c5;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
 }
 
 /* Footer links */
 .footer-distributed ul.footer-links {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #fdd4c5;
   margin: 0 0 10px;
@@ -283,7 +285,7 @@ header .logo {
 
 .footer-distributed .footer-links li:before {
   content: "·";
-  font-size: 20px;
+  font-size: 1.25rem;
   left: 0;
   color: #fff;
   display: inline-block;
@@ -325,7 +327,7 @@ header .logo {
 
 .form__container {
   border-radius: 5px;
-  width: 40%;
+  width: 100%;
   grid-area: contactForm;
   margin-top: 2rem;
 }
@@ -336,13 +338,13 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(224, 133, 115);
+  border: 2px solid rgb(224, 133, 115);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background-color: #0f1014;
+  background-color: transparent;
   font-family: "Fira Code", monospace;
 }
 
@@ -357,7 +359,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: rgb(224, 133, 115);
+  background-color: transparent;
   color: #fdd4c5;
   font-family: "Fira Code", monospace;
 }
@@ -627,7 +629,7 @@ input[type=submit]:hover {
   padding: 1rem;
 }
 .home .projects__subtitle {
-  margin-top: 0;
+  margin-top: 4rem;
 }
 .home__contact-subtitle {
   margin-top: 12rem;
@@ -765,6 +767,10 @@ input[type=submit]:hover {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
+.contact .contact__linkedin {
+  text-decoration: underline;
+  color: rgb(224, 133, 115);
+}
 .contact .contact__icons--box {
   grid-area: contactBox;
   display: flex;
@@ -818,6 +824,9 @@ input[type=submit]:hover {
   }
   .home .home__contact--box {
     visibility: hidden;
+  }
+  .contact .form__container {
+    width: 80%;
   }
 }
 /*-------------------*/
@@ -901,6 +910,17 @@ input[type=submit]:hover {
     grid-template-areas: "skillsTitle" "skillsDescrip" "skillsTech" "skillsPersonal";
     gap: auto;
   }
+  .contact .form__container {
+    width: 80%;
+  }
+  .contact__img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .contact__subtitle {
+    margin-top: 0;
+  }
 }
 /*-------------------*/
 @media screen and (max-width: 768px) {
@@ -953,6 +973,17 @@ input[type=submit]:hover {
     width: 0;
     height: 0;
   }
+  .contact .form__container {
+    width: 100%;
+  }
+  .contact__img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .contact__subtitle {
+    margin-top: 0;
+  }
 }
 /*-------------------*/
 @media screen and (max-width: 576px) {
@@ -1003,6 +1034,17 @@ input[type=submit]:hover {
     width: 0;
     height: 0;
   }
+  .contact .form__container {
+    width: 100%;
+  }
+  .contact__img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .contact__subtitle {
+    margin-top: 0;
+  }
 }
 /*-------------------*/
 @media screen and (max-width: 320px) {
@@ -1012,7 +1054,7 @@ input[type=submit]:hover {
   body {
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
   }
   .logo {
     visibility: hidden;
@@ -1082,5 +1124,16 @@ input[type=submit]:hover {
     visibility: hidden;
     width: 0;
     height: 0;
+  }
+  .contact .form__container {
+    width: 100%;
+  }
+  .contact__img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .contact__subtitle {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */

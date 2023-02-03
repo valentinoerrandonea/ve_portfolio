@@ -13,8 +13,8 @@ button {
 
     .home__about--btn {
         margin-top: 1rem;
+        margin-right: 1rem;
         margin-left: 0.5rem;
-
     }
 
     .btn_contact_me {
@@ -26,7 +26,12 @@ button {
     .btn_resume {
         width: 15rem;
         height: 5rem;
+        margin-left: 1.5rem;
     }
+
+    // .home__contact--btn {
+    //     font-size: 2rem;
+    // }
 }
 
 button:hover {
