@@ -3,13 +3,21 @@ header {
     border-bottom: 1px solid $secondaryColor;
     margin-bottom: 5rem;
 
-    .navbar-nav li a {
-        color: $primaryColor;
+    .navbar-nav {
+        li {
+            a {
+                color: $primaryColor;
+            }
+        }
     }
 
-    .navbar-nav li a:hover {
-        color: $secondaryColor;
-        font-weight: bold;
+    .navbar-nav {
+        li {
+            a:hover {
+                color: $secondaryColor;
+                font-weight: bold;
+            }
+        }
     }
 
     .navbar-toggler-icon {

@@ -30,7 +30,7 @@
     }
 
     .skillset {
-        padding: 1rem;
+        @extend .home__skills--subtitle
     }
 
 

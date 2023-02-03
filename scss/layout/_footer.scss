@@ -4,30 +4,52 @@
     text-align: left;
     padding: 2.813rem 3.125rem;
     border-top: 1px solid $primaryColor;
-}
 
-.footer-distributed .footer-left ul {
-    color: $primaryColor;
-    font-size: 0.875rem;
-    margin: 0;
-}
+    .footer-left {
+        ul {
+            color: $primaryColor;
+            font-size: 0.875rem;
+            margin: 0;
 
-/* Footer links */
+            .footer-links {
+                font-size: 1.125rem;
+                font-weight: bold;
+                color: $primaryColor;
+                margin: 0 0 10px;
+                padding: 0;
 
-.footer-distributed ul.footer-links {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: $primaryColor;
-    margin: 0 0 10px;
-    padding: 0;
-}
+                li {
+                    display: inline-block;
+                    line-height: 1.8;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: ease .25s;
+                }
 
-.footer-distributed ul.footer-links li {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-    transition: ease .25s;
+            }
+
+        }
+    }
+
+    .footer-right {
+        float: right;
+        margin-top: 6px;
+        max-width: 180px;
+
+        li {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 3px;
+            transition: all .25s;
+        }
+    }
 }
 
 .footer-distributed .footer-links li:before {
@@ -41,26 +63,6 @@
 
 .footer-distributed .footer-links .link-1:before {
     content: none;
-}
-
-.footer-distributed .footer-right {
-    float: right;
-    margin-top: 6px;
-    max-width: 180px;
-}
-
-.footer-distributed .footer-right li {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-color: #33383b;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-left: 3px;
-    transition: all .25s;
 }
 
 .footer-distributed .footer-right li:hover {

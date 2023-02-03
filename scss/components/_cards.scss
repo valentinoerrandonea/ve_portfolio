@@ -18,19 +18,19 @@
 
 .btn,
 .btn-primary {
-    background-color: $backgroundColor;
+    @extend .card-body;
     border: 1px solid $secondaryColor ;
     justify-content: center;
 }
 
 .btn:hover {
+    @extend .card-body;
     box-shadow: 0 0 0.625rem 0 $secondaryColor inset, 0 0 1.25rem 0.125rem $secondaryColor;
     border: 0.188rem solid $secondaryColor;
-    background-color: $backgroundColor;
 }
 
 .btn-primary:hover {
     box-shadow: 0 0 0.625rem 0 $secondaryColor inset, 0 0 1.25rem 0.125rem $secondaryColor;
     border: 0.188rem solid $secondaryColor;
-    background-color: $backgroundColor;
+    @extend .card-body;
 }

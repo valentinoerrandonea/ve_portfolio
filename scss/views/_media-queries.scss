@@ -1,4 +1,10 @@
 /*INICIO MEDIA QUERIES*/
+@media screen and(max-width:2560px) {
+    .pers-card:hover .pers-content .pers-details {
+        transform: translateY(30px);
+    }
+}
+
 /*-------------------*/
 @media screen and (max-width: 1400px) {
     .home {
@@ -14,6 +20,10 @@
         .home__presentation-btn {
             translate: 0 -300px;
         }
+    }
+
+    .pers-card:hover .pers-content .pers-details {
+        transform: translateY(35px);
     }
 }
 
@@ -55,6 +65,10 @@
         .form__container {
             width: 80%;
         }
+    }
+
+    .pers-card:hover .pers-content .pers-details {
+        transform: translateY(35px);
     }
 }
 
@@ -184,6 +198,8 @@
             margin-top: 0;
         }
     }
+
+
 }
 
 /*-------------------*/
@@ -353,6 +369,46 @@
         &__subtitle {
             margin-top: 0;
         }
+    }
+}
+
+// -------------------------
+@media screen and (max-width:453px) {
+    .pers-card:hover .pers-content .pers-details {
+        transform: translateY(0px);
+    }
+
+    .pers-card .pers-content .pers-details h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: $primaryColor;
+        line-height: 1.2em;
+    }
+
+    .pers-card .pers-content .pers-details h2 span {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+
+// --------------------
+@media screen and (max-width:393px) {
+    .pers-card:hover .pers-content .pers-details {
+        transform: translateY(30px);
+    }
+
+    .pers-card .pers-content .pers-details h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: $primaryColor;
+        line-height: 1.2em;
+    }
+
+    .pers-card .pers-content .pers-details h2 span {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
     }
 }
 
