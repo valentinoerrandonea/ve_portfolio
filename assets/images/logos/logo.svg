@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="576" height="512">
+	<title>display-solid-svg</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #e08573 } 
+		.t1 { font-size: 300px;fill: #e08573;font-weight: 900;font-family: "Inconsolata-Black", "Inconsolata" } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m512 0c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64h-176l10.7 32h69.3c17.7 0 32 14.3 32 32 0 17.7-14.3 32-32 32h-256c-17.7 0-32-14.3-32-32 0-17.7 14.3-32 32-32h69.3l10.7-32h-176c-35.3 0-64-28.7-64-64v-288c0-35.3 28.7-64 64-64zm-448 64v288h448v-288z"/>
+	<text id="&lt;/&gt;" style="transform: matrix(1,0,0,1,67,107)" >
+		<tspan x="0" y="202.5" class="t1">&lt;/&gt;
+</tspan>
+	</text>
+</svg>
